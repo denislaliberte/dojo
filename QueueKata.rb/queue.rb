@@ -1,6 +1,13 @@
 class Queue
   def empty
-    true
+    if @item
+      false
+    else
+      true
+    end
+  end
+  def push(item)
+    @item = item
   end
 end
 

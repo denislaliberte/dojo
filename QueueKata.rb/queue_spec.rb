@@ -5,4 +5,9 @@ describe "queue" do
     queue = Queue.new()
     expect(queue.empty()).to eq(true)
   end
+  it "is not empty when an item is push" do
+    queue = Queue.new()
+    queue.push(1)
+    expect(queue.empty()).to eq(false)
+  end
 end
