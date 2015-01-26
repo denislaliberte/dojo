@@ -22,5 +22,6 @@ describe "queue" do
     expect(@queue.pop).to eq(1)
     expect(@queue.empty()).to eq(false)
     expect(@queue.pop).to eq(2)
+    expect(@queue.empty()).to eq(true)
   end
 end
