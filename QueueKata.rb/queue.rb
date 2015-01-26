@@ -13,6 +13,7 @@ class Queue
   def pop()
     @count -= 1
     temp = @items[0]
+    @items.delete_at(0)
     temp
   end
 end
