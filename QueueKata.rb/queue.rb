@@ -9,5 +9,8 @@ class Queue
   def push(item)
     @item = item
   end
+  def pop()
+    @item
+  end
 end
 

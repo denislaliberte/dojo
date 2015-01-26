@@ -10,4 +10,9 @@ describe "queue" do
     queue.push(1)
     expect(queue.empty()).to eq(false)
   end
+  it "return an item" do
+    queue = Queue.new()
+    queue.push(1)
+    expect(queue.pop).to eq(1)
+  end
 end
