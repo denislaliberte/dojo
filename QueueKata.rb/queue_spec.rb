@@ -16,4 +16,10 @@ describe "queue" do
     expect(@queue.pop).to eq(1)
     expect(@queue.empty()).to eq(true)
   end
+  it "is not empty when tow item is added and one is pop" do
+    @queue.push(1)
+    @queue.push(2)
+    @queue.pop
+    expect(@queue.empty()).to eq(false)
+  end
 end
