@@ -14,5 +14,6 @@ describe "queue" do
   it "return an item" do
     @queue.push(1)
     expect(@queue.pop).to eq(1)
+    expect(@queue.empty()).to eq(true)
   end
 end

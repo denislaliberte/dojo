@@ -10,7 +10,9 @@ class Queue
     @item = item
   end
   def pop()
-    @item
+    temp = @item
+    @item = nil
+    temp
   end
 end
 
