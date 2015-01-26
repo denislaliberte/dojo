@@ -16,12 +16,19 @@ describe "queue" do
     expect(@queue.pop).to eq(1)
     expect(@queue.empty()).to eq(true)
   end
-  it "two item queue" do
+  it "tree item queue" do
     @queue.push(1)
     @queue.push(2)
+    @queue.push(3)
     expect(@queue.pop).to eq(1)
     expect(@queue.empty()).to eq(false)
     expect(@queue.pop).to eq(2)
+    expect(@queue.empty()).to eq(false)
+    expect(@queue.pop).to eq(3)
+    expect(@queue.empty()).to eq(true)
+    @queue.push(1)
+    expect(@queue.empty()).to eq(false)
+    expect(@queue.pop).to eq(1)
     expect(@queue.empty()).to eq(true)
   end
 end
