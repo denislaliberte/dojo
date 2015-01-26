@@ -1,18 +1,18 @@
 class Queue
   def initialize
+    @items = []
     @count = 0
   end
   def empty
     @count == 0
   end
   def push(item)
+    @items[@count] = item
     @count += 1
-    @item = item
   end
   def pop()
     @count -= 1
-    temp = @item
-    @item = nil
+    temp = @items[0]
     temp
   end
 end
