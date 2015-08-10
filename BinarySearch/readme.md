@@ -111,21 +111,31 @@ assert equal  | http://bit.ly/1L2NvgH | $this->assertEquals(1, 1);
 
 ## 4 found unique item
 
-+++ b/BinarySearch/AsdfTest.php
--      $this->assertEquals(-1, $a->search([]));
-+      $this->assertEquals(-1, $a->search(1,[]));
-+    }
-+    
-+    public function testFoundUniqItem() {
-+      $a = new BinarySearch();
-+      $this->assertEquals(0,  $a->search(1,[1]));
-+++ b/BinarySearch/BinarySearch.php
--  public function search(array $input) {
--    return -1;
-+  public function search($search, array $input) {
-+    if(empty($input)) { return -1 ;}
-+    return 0;
+```php
+  +++ b/BinarySearch/AsdfTest.php
+  -      $this->assertEquals(-1, $a->search([]));
+  +      $this->assertEquals(-1, $a->search(1,[]));
+  +    }
+  +    
+  +    public function testFoundUniqItem() {
+  +      $a = new BinarySearch();
+  +      $this->assertEquals(0,  $a->search(1,[1]));
+  +++ b/BinarySearch/BinarySearch.php
+  -  public function search(array $input) {
+  -    return -1;
+  +  public function search($search, array $input) {
+  +    if(empty($input)) { return -1 ;}
+  +    return 0;
+```
 
+### commit a64a1f079c9b32277bffca4e18ad628c209c3bed
+      found uniqu item
+    BinarySearch/AsdfTest.php
+    BinarySearch/BinarySearch.php
+    BinarySearch/phpunit.sh
+    BinarySearch/readme.md
+    var.sh
+    
 ## 4 no found
 
 
