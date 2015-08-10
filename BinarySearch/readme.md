@@ -29,5 +29,15 @@ __todo__ 1.2 canary test
 ### commit 0e03f989bfd145b38a56682edeaddaded3e66ff1
     no comment
 
+__todo__ 1.3 class placehoder
+
+```php
+  +++ b/BinarySearch/AsdfTest.php
+  +
+  +    public function testAsdf() {
+  +      $a = new BinarySearch();
+  +      $this->assertTrue($a->asdf());
+  +    }
+```
 
 ## push lines
