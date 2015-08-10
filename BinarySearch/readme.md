@@ -13,5 +13,21 @@ test class  |  http://bit.ly/1Tm6Sk2  |  class aTest extends PHPUnit_Framework_T
 
 __todo__ 1.2 canary test
 
-## push lines
 
+```php
+  +++ b/BinarySearch/AsdfTest.php
+  @@ -0,0 +1,9 @@
+  +<?php 
+  +
+  +class aTest extends PHPUnit_Framework_TestCase { 
+  +    public function testA() {
+  +      $this->assertTrue(true);
+  +    }
+  +}
+```
+
+### commit 0e03f989bfd145b38a56682edeaddaded3e66ff1
+    no comment
+
+
+## push lines
