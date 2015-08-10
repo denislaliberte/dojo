@@ -57,11 +57,12 @@ diff --git a/BinarySearch/AsdfTest.php b/BinarySearch/AsdfTest.php
 __question__ 2.1 Quels sont les liens qui explique les requis pour ce kata
 
 [ Kata02: Karate Chop - CodeKata ](http://codekata.com/kata/kata02-karate-chop)
-```java
+
+```ruby
   chop(int, array_of_int)  -> int
 ```
 
-```java
+```ruby
   def test_chop
     assert_equal(-1, chop(3, []))
     assert_equal(-1, chop(3, [1]))
@@ -102,12 +103,31 @@ assert equal  | http://bit.ly/1L2NvgH | $this->assertEquals(1, 1);
 +  public function search(array $input) {
 +    return -1;
 
+### commit 805845ecec09df55b3d4ecfe5ae7ac6a5c106d1b
+      add test not found
+    BinarySearch/AsdfTest.php
+    BinarySearch/BinarySearch.php
+    BinarySearch/readme.md
+
+## 4 found unique item
+
++++ b/BinarySearch/AsdfTest.php
+-      $this->assertEquals(-1, $a->search([]));
++      $this->assertEquals(-1, $a->search(1,[]));
++    }
++    
++    public function testFoundUniqItem() {
++      $a = new BinarySearch();
++      $this->assertEquals(0,  $a->search(1,[1]));
++++ b/BinarySearch/BinarySearch.php
+-  public function search(array $input) {
+-    return -1;
++  public function search($search, array $input) {
++    if(empty($input)) { return -1 ;}
++    return 0;
+
 ## 4 no found
 
 
-## X found unique item
-
 
 ## push lines
-
-

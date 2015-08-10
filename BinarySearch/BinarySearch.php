@@ -1,7 +1,8 @@
 <?php
 
 class BinarySearch {
-  public function search(array $input) {
-    return -1;
+  public function search($search, array $input) {
+    if(empty($input)) { return -1 ;}
+    return 0;
   }
 }
