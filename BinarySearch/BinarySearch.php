@@ -1,7 +1,7 @@
 <?php
 
 class BinarySearch {
-  public function asdf() {
-    return false;
+  public function search(array $input) {
+    return -1;
   }
 }

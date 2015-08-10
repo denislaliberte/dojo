@@ -1,14 +1,8 @@
 <?php 
 
 class aTest extends PHPUnit_Framework_TestCase { 
-    public function testA() {
-      $this->assertTrue(true);
-    }
-
-    public function testAsdf() {
+    public function testNotFound() {
       $a = new BinarySearch();
-      $this->assertTrue($a->asdf());
+      $this->assertEquals(-1, $a->search([]));
     }
 }
-
-
