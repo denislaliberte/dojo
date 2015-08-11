@@ -390,6 +390,12 @@ array split slice               | http://bit.ly/1NnNWQ9  | $a = array_slice([1,2
   -      $this->markTestIncomplete('asdf');
 ```
 
+### commit be671f95363af7fcb0c56ec900d31658c62f7641
+      find last of three elements
+    BinarySearch/BinarySearch.php
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
+__todo__ 9.1 not find element bigger than the middle elements
 
 
 ## X more than middle
