@@ -248,10 +248,55 @@ __todo__ 6.2 add method to return the middle index
     BinarySearch/BinarySearchTest.php
     BinarySearch/readme.md
 
+## 7 refactor to use a field for the array
+
+marck pending incomplete  |  http://bit.ly/1HDXt0z  |  $this->markTestIncomplete('asdf');
+
+```
+  +++ b/BinarySearch/BinarySearch.php
+  -  public function search($search, array $input) {
+  -    if(empty($input)) { return -1 ; }
+  -    $middle = $this->middle($input);
+  -    if($input[$middle] == $search) { return $middle; }
+  +  private $array;
+  +  public function __construct(array $array) {
+  +    $this->array = $array;
+  +  }
+  +
+  +  static public function create(array $array) {
+  +    return new self($array);
+  +  }
+  +
+  +  public function search($search) {
+  +    if(empty($this->array)) { return -1 ; }
+  +    if($this->array[$this->middle()] == $search) { return $this->middle(); }
+  -  public function middle(array $input) {
+  -    return round( (sizeof($input) -1) /2 );
+  +  public function middle() {
+  +    return round( (sizeof($this->array) -1) /2 );
+  +++ b/BinarySearch/BinarySearchTest.php
+  -    private $testInstance;
+  -    public function __construct() {
+  -      print 'asdf';
+  -      $this->testInstance =  new BinarySearch();
+  -    }
+  -      $this->assertEquals(-1, $this->testInstance->search(1,[]));
+  +      $this->assertEquals(-1, BinarySearch::create([])->search(1));
+  -      $this->assertEquals(0,  $this->testInstance->search(1,[1]));
+  +      $this->assertEquals(0, BinarySearch::create([1])->search(1));
+  -      $this->assertEquals(-1,  $this->testInstance->search(2,[1]));
+  +      $this->assertEquals(-1, BinarySearch::create([1])->search(2));
+  -      $this->assertEquals(1,  $this->testInstance->search(2,[1,2,3]));
+  +      $this->assertEquals(1, BinarySearch::create([1,2,3])->search(2));
+  -      $this->assertEquals(1, $this->testInstance->middle([3,2,1]));
+  -      $this->assertEquals(0, $this->testInstance->middle([3]));
+  -      $this->assertEquals(-1, $this->testInstance->middle([]));
+  +      $this->assertEquals(1, BinarySearch::create([1,2,3])->middle());
+  +      $this->assertEquals(0, BinarySearch::create([3])->middle());
+  +      $this->assertEquals(-1, BinarySearch::create([])->middle());
+```
+
 ## X less than middle
 ## X more than middle
 
-## push lines
-+## push lines
-~/search/php.txt round float to int
-
+#### push lines ####
