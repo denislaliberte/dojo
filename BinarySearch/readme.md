@@ -242,6 +242,12 @@ __todo__ 6.2 add method to return the middle index
   +    BinarySearch/BinarySearchTest.php
   +    BinarySearch/readme.md
 ```
+### commit cf621ca3cae688a9210f3b51c774f4c7eb04c703
+      find item in the middle
+    BinarySearch/BinarySearch.php
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
+
 ## X less than middle
 ## X more than middle
 
