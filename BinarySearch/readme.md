@@ -222,7 +222,26 @@ __todo__ 6.2 add method to return the middle index
   +      $this->assertEquals(-1, $this->testInstance->middle([]));
   +    }
 ```
+### commit d406df70d5e5c6436ef33af6c6a6959cf843a90c
+      add method to find the middle index
+    BinarySearch/BinarySearch.php
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
 
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  -    if($input[0] == $search) { return 0; }
+  +    $middle = $this->middle($input);
+  +    if($input[$middle] == $search) { return $middle; }
+  +++ b/BinarySearch/BinarySearchTest.php
+  -      $this->markTestIncomplete();
+  +++ b/BinarySearch/readme.md
+  +### commit d406df70d5e5c6436ef33af6c6a6959cf843a90c
+  +      add method to find the middle index
+  +    BinarySearch/BinarySearch.php
+  +    BinarySearch/BinarySearchTest.php
+  +    BinarySearch/readme.md
+```
 ## X less than middle
 ## X more than middle
 
