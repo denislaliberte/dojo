@@ -1,18 +1,20 @@
 <?php 
 
 class BinarySearchTest extends PHPUnit_Framework_TestCase { 
+    private $testInstance;
+    public function __construct() {
+      print 'asdf';
+      $this->testInstance =  new BinarySearch();
+    }
     public function testNotFound() {
-      $a = new BinarySearch();
-      $this->assertEquals(-1, $a->search(1,[]));
+      $this->assertEquals(-1, $this->testInstance->search(1,[]));
     }
 
     public function testFoundUniqItem() {
-      $a = new BinarySearch();
-      $this->assertEquals(0,  $a->search(1,[1]));
+      $this->assertEquals(0,  $this->testInstance->search(1,[1]));
     }
 
     public function testNotFoundUniqItem() {
-      $a = new BinarySearch();
-      $this->assertEquals(-1,  $a->search(2,[1]));
+      $this->assertEquals(-1,  $this->testInstance->search(2,[1]));
     }
 }

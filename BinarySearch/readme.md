@@ -138,6 +138,52 @@ assert equal  | http://bit.ly/1L2NvgH | $this->assertEquals(1, 1);
     
 ## 4 no found
 
+### commit a0ef90c10ee92a2dab98b7573cd8c2f7a8e5aadd
+      add not found uniqu item
+  .gitignore
+  BinarySearch/AsdfTest.php
+  BinarySearch/BinarySearch.php
+  BinarySearch/BinarySearchTest.php
+  BinarySearch/phpunit.sh
+  var.sh
 
+## 5 reuse object in test
+
+```php
+  +++ b/BinarySearch/BinarySearchTest.php
+  +    private $testInstance;
+  +    public function __construct() {
+  +      print 'asdf';
+  +      $this->testInstance =  new BinarySearch();
+  +    }
+  -      $a = new BinarySearch();
+  -      $this->assertEquals(-1, $a->search(1,[]));
+  +      $this->assertEquals(-1, $this->testInstance->search(1,[]));
+  -      $a = new BinarySearch();
+  -      $this->assertEquals(0,  $a->search(1,[1]));
+  +      $this->assertEquals(0,  $this->testInstance->search(1,[1]));
+  -      $a = new BinarySearch();
+  -      $this->assertEquals(-1,  $a->search(2,[1]));
+  +      $this->assertEquals(-1,  $this->testInstance->search(2,[1]));
+  +++ b/BinarySearch/readme.md
+  +### commit a0ef90c10ee92a2dab98b7573cd8c2f7a8e5aadd
+  +      add not found uniqu item
+  +  .gitignore
+  +  BinarySearch/AsdfTest.php
+  +  BinarySearch/BinarySearch.php
+  +  BinarySearch/BinarySearchTest.php
+  +  BinarySearch/phpunit.sh
+  +  var.sh
+  +
+  +## 5 reuse object in test
+  +
+  +## X center of three items
+  +## X less than middle
+  +## X more than middle
+```
 
 ## push lines
+## X center of three items
+## X less than middle
+## X more than middle
+
