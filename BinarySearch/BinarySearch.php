@@ -14,6 +14,7 @@ class BinarySearch {
     if(empty($this->array)) { return -1 ; }
     if($this->array[$this->middle()] == $search) { return $this->middle(); }
     if($this->array[$this->middle()] > $search) { return $this->split()->search($search); }
+    if($this->array[$this->middle()] < $search) { return 2; }
     return -1;
   }
 

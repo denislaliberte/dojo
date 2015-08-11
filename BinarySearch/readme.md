@@ -374,7 +374,21 @@ array split slice               | http://bit.ly/1NnNWQ9  | $a = array_slice([1,2
   -      $this->markTestIncomplete('asdf');
 ```
 
+### commit b9231885ba83947ba53746c188d70aa4e413d03c
+      no found item smaller than the middle item
+    BinarySearch/BinarySearch.php
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
+
 ## 9 find the last element of three
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  +    if($this->array[$this->middle()] < $search) { return 2; }
+  +++ b/BinarySearch/BinarySearchTest.php
+  +      $this->markTestIncomplete('asdf');
+  -      $this->markTestIncomplete('asdf');
+```
 
 
 
