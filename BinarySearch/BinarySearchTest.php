@@ -22,4 +22,10 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
       $this->markTestIncomplete();
       $this->assertEquals(1,  $this->testInstance->search(2,[1,2,3]));
     }
+
+    public function test_get_the_middle_index() {
+      $this->assertEquals(1, $this->testInstance->middle([3,2,1]));
+      $this->assertEquals(0, $this->testInstance->middle([3]));
+      $this->assertEquals(-1, $this->testInstance->middle([]));
+    }
 }

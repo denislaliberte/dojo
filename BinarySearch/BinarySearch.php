@@ -6,4 +6,8 @@ class BinarySearch {
     if($input[0] == $search) { return 0; }
     return -1;
   }
+
+  public function middle(array $input) {
+    return round( (sizeof($input) -1) /2 );
+  }
 }

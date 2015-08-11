@@ -201,8 +201,32 @@ __todo__ 6.1 find the middle element of three
   +    BinarySearch/BinarySearchTest.php
   +    BinarySearch/readme.md
 ```
+
+### commit 3d9fdf1920796233b22f8d155345cd649f201a3c
+      add pending test for middle element
+  BinarySearch/BinarySearchTest.php
+  BinarySearch/readme.md
+
+__todo__ 6.2 add method to return the middle index
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  +
+  +  public function middle(array $input) {
+  +    return round( (sizeof($input) -1) /2 );
+  +  }
+  +++ b/BinarySearch/BinarySearchTest.php
+  +
+  +    public function test_get_the_middle_index() {
+  +      $this->assertEquals(1, $this->testInstance->middle([3,2,1]));
+  +      $this->assertEquals(0, $this->testInstance->middle([3]));
+  +      $this->assertEquals(-1, $this->testInstance->middle([]));
+  +    }
+```
+
 ## X less than middle
 ## X more than middle
 
 ## push lines
 +## push lines
+~/search/php.txt round float to int
+
