@@ -296,7 +296,65 @@ marck pending incomplete  |  http://bit.ly/1HDXt0z  |  $this->markTestIncomplete
   +      $this->assertEquals(-1, BinarySearch::create([])->middle());
 ```
 
-## X less than middle
-## X more than middle
+### commit da0d722882d1c6c3c962a51e180e1129b509be8c
+      add array as instance field
+    BinarySearch/BinarySearch.php
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
 
+## 8 less than middle
+
+__todo__ 8.1 find the first element of three __done__
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  +    if($this->array[$this->middle()] > $search) { return 0; }
+  +++ b/BinarySearch/BinarySearchTest.php
+  +
+  +    public function test_get_find_first_item_of_three() {
+  +      $this->assertEquals(0, BinarySearch::create([1,2,3])->search(1));
+  +    }
+```
+
+__todo__ 8.2 not found item smaller than the middle
+
+__todo__ 8.3 return the first half of the array
+array split slice               | http://bit.ly/1NnNWQ9  | $a = array_slice([1,2,3],0,1);  |  assert($a ==[1]);
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  +    if($this->array[$this->middle()] > $search) { return 0; }
+  +
+  +  public function split() {
+  +    return array_slice($this->array, 0, $this->middle());
+  +  }
+  +++ b/BinarySearch/BinarySearchTest.php
+  -    public function testFoundUniqItem() {
+  +    public function test_found_uniq_item() {
+  -    public function testNotFoundUniqItem() {
+  +    public function test_not_found_uniq_item() {
+  +
+  +    public function test_get_find_first_item_of_three() {
+  +      $this->assertEquals(0, BinarySearch::create([1,2,3])->search(1));
+  +    }
+  +
+  +    public function test_get_split_array_in_the_middle() {
+  +      $this->assertEquals([1], BinarySearch::create([1,2,3])->split());
+  +    }
+  +
+  +    public function test_not_found_item_smaller_than_middle() {
+  +      $this->markTestIncomplete('asdf');
+  +      $this->assertEquals(-1, BinarySearch::create([1,2,3])->search(0));
+  +    }
+  +
+  +    public function test_get_find_last_item_of_three() {
+  +      $this->markTestIncomplete('asdf');
+  +      $this->assertEquals(2, BinarySearch::create([1,2,3])->search(3));
+  +    }
+```
+## 9 find the last element of three
+
+
+
+## X more than middle
 #### push lines ####
