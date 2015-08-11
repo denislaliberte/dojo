@@ -27,12 +27,7 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
       $this->assertEquals(0, BinarySearch::create([1,2,3])->search(1));
     }
 
-    public function test_get_split_array_in_the_middle() {
-      $this->assertEquals([1], BinarySearch::create([1,2,3])->split());
-    }
-
     public function test_not_found_item_smaller_than_middle() {
-      $this->markTestIncomplete('asdf');
       $this->assertEquals(-1, BinarySearch::create([1,2,3])->search(0));
     }
 

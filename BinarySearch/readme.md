@@ -318,7 +318,7 @@ __todo__ 8.1 find the first element of three __done__
 
 __todo__ 8.2 not found item smaller than the middle
 
-__todo__ 8.3 return the first half of the array
+__todo__ 8.3 return the first half of the array __done__
 array split slice               | http://bit.ly/1NnNWQ9  | $a = array_slice([1,2,3],0,1);  |  assert($a ==[1]);
 
 ```php
@@ -352,9 +352,32 @@ array split slice               | http://bit.ly/1NnNWQ9  | $a = array_slice([1,2
   +      $this->assertEquals(2, BinarySearch::create([1,2,3])->search(3));
   +    }
 ```
+
+### commit 3dabad7eebdbacf07bd63403b2560f25dfcad42f
+      return the first half of the array
+    BinarySearch/BinarySearch.php
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  -    if($this->array[$this->middle()] > $search) { return 0; }
+  +    if($this->array[$this->middle()] > $search) { return $this->split()->search($search); }
+  -  public function split() {
+  -    return array_slice($this->array, 0, $this->middle());
+  +  private function split() {
+  +    return new self(array_slice($this->array, 0, $this->middle()));
+  +++ b/BinarySearch/BinarySearchTest.php
+  -    public function test_get_split_array_in_the_middle() {
+  -      $this->assertEquals([1], BinarySearch::create([1,2,3])->split());
+  -    }
+  -      $this->markTestIncomplete('asdf');
+```
+
 ## 9 find the last element of three
 
 
 
 ## X more than middle
 #### push lines ####
+
