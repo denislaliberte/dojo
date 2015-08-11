@@ -17,4 +17,9 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
     public function testNotFoundUniqItem() {
       $this->assertEquals(-1,  $this->testInstance->search(2,[1]));
     }
+
+    public function testItemInTheCenterOfThree() {
+      $this->markTestIncomplete();
+      $this->assertEquals(1,  $this->testInstance->search(2,[1,2,3]));
+    }
 }

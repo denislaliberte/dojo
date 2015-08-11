@@ -181,9 +181,28 @@ assert equal  | http://bit.ly/1L2NvgH | $this->assertEquals(1, 1);
   +## X less than middle
   +## X more than middle
 ```
+## commit 14c506804a1873c78dd065ec45b175cef941b552
+      reuse instance in test
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
 
-## push lines
-## X center of three items
+## 6 center of three items
+__todo__ 6.1 find the middle element of three
+```php
+  +++ b/BinarySearch/BinarySearchTest.php
+  +
+  +    public function testItemInTheCenterOfThree() {
+  +      $this->markTestIncomplete();
+  +      $this->assertEquals(1,  $this->testInstance->search(2,[1,2,3]));
+  +    }
+  +++ b/BinarySearch/readme.md
+  +## commit 14c506804a1873c78dd065ec45b175cef941b552
+  +      reuse instance in test
+  +    BinarySearch/BinarySearchTest.php
+  +    BinarySearch/readme.md
+```
 ## X less than middle
 ## X more than middle
 
+## push lines
++## push lines
