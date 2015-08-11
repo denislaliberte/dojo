@@ -1,2 +1,2 @@
 #!/bin/bash
-phpunit --bootstrap BinarySearch.php AsdfTest.php --verbose
+phpunit --bootstrap BinarySearch.php BinarySearchTest.php --verbose
