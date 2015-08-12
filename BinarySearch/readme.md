@@ -430,6 +430,11 @@ class get class name  | http://bit.ly/1IHSEag | $a = get_class(new stdClass()); 
 +      $this->assertEquals([3], BinarySearchTestClass::create([1,2,3])->splitUp()->get_array());
 +    }
 
+commit a9b9fb15a31a5d80c691eb4ee3c15d4e066490f0
+     MAS-301 get the upper half of the array
+    BinarySearch/BinarySearch.php
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
 __todo__ 9.X split empty array
 __todo__ 9.X test split array
 __todo__ 9.X split two element array
