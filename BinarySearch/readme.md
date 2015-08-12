@@ -397,6 +397,42 @@ array split slice               | http://bit.ly/1NnNWQ9  | $a = array_slice([1,2
     BinarySearch/readme.md
 __todo__ 9.1 not find element bigger than the middle elements
 
+__todo__ 9.2 get the second half of the array
+
+class self create children class instance in parent method |     | new static(); | php/static.php
+
+  class a { public function return_static() { return new static(); } }
+  class b extends a { }
+  $c = new b();
+  $d = $c->return_static();
+  assert( get_class($d) == 'b');
+
+class get class name  | http://bit.ly/1IHSEag | $a = get_class(new stdClass());  | assert($a == 'stdClass');
+
++++ b/BinarySearch/BinarySearch.php
+-  private $array;
++  protected $array;
+-    return new self($array);
++    return new static($array);
++
++  public function splitUp() {
++    return new static(array_slice($this->array,$this->middle() + 1,1));
++  }
++++ b/BinarySearch/BinarySearchTest.php
++class BinarySearchTestClass extends BinarySearch {
++  public function get_array() {return $this->array;}
++}
++
+-      $this->markTestIncomplete('asdf');
++      $this->markTestIncomplete('todo');
++
++    public function test_split_up_array() {
++      $this->assertEquals([3], BinarySearchTestClass::create([1,2,3])->splitUp()->get_array());
++    }
+
+__todo__ 9.X split empty array
+__todo__ 9.X test split array
+__todo__ 9.X split two element array
 
 ## X more than middle
 #### push lines ####

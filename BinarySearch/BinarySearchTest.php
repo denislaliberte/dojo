@@ -1,5 +1,9 @@
 <?php 
 
+class BinarySearchTestClass extends BinarySearch {
+  public function get_array() {return $this->array;}
+}
+
 class BinarySearchTest extends PHPUnit_Framework_TestCase { 
     public function testNotFound() {
       $this->assertEquals(-1, BinarySearch::create([])->search(1));
@@ -10,7 +14,7 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
     }
 
     public function test_not_found_uniq_item() {
-      $this->markTestIncomplete('asdf');
+      $this->markTestIncomplete('todo');
       $this->assertEquals(-1, BinarySearch::create([1])->search(2));
     }
 
@@ -34,5 +38,9 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
 
     public function test_get_find_last_item_of_three() {
       $this->assertEquals(2, BinarySearch::create([1,2,3])->search(3));
+    }
+
+    public function test_split_up_array() {
+      $this->assertEquals([3], BinarySearchTestClass::create([1,2,3])->splitUp()->get_array());
     }
 }
