@@ -557,11 +557,22 @@ __todo__ 12.3 test last element
 +      $this->assertEquals(1, BinarySearch::create([1,2])->search(2));
 +    }
 
+### commit c2f1b0923f297fb8c61ca5a4a96c6759b9109fe8     -     MAS-329 found item in two element array
+- BinarySearch/BinarySearchTest.php
+- BinarySearch/readme.md
 
-## search five element array
+## 13 search five element array
++++ b/BinarySearch/BinarySearchTest.php
++
++    public function test_not_found_item_in_five_element_array() {
++      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3,4,5])->search(0));
++      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3,4,5])->search(6));
++    }
 ## search long chain
 ## do the kata in an iterative fashion
 
+    assert_equal(-1, chop(2, [1, 3, 5]))
+    assert_equal(-1, chop(2, [1, 3, 5, 7]))
 
 #### push lines ####
 
