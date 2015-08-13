@@ -464,9 +464,46 @@ class constant  |  http://bit.ly/1PnV2p9  | class a{ const B = 'c'; }; | assert(
   +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3])->search(0));
 ```
 
+#### commit 2098649627f9d1b65c34f3767302803c088549d2     -     MAS-329 fix found in the upper half and remove magic number
+- BinarySearch/BinarySearch.php
+- BinarySearch/BinarySearchTest.php
+- BinarySearch/readme.md
+
+
+## 10 change midlle function to private and calculate only one time
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  +  protected $middle;
+  +    $this->middle = self::middle($array);
+  -    if($this->array[$this->middle()] == $search) { return $this->middle(); }
+  -    if($this->array[$this->middle()] > $search) { return $this->split()->search($search); }
+  -    if($this->array[$this->middle()] < $search) {
+  +    if($this->array[$this->middle] == $search) { return $this->middle; }
+  +    if($this->array[$this->middle] > $search) { return $this->split()->search($search); }
+  +    if($this->array[$this->middle] < $search) {
+  -      return  ($upper_half_index == self::NOT_FOUND) ? $upper_half_index : $this->middle() + 1 + $upper_half_index;
+  +      return  ($upper_half_index == self::NOT_FOUND) ? $upper_half_index : $this->middle + 1 + $upper_half_index;
+  -  public function middle() {
+  -    return round( (sizeof($this->array) -1) /2 );
+  +  private static function middle($array) {
+  +    return round( (sizeof($array) -1) /2 );
+  -    return new self(array_slice($this->array, 0, $this->middle()));
+  +    return new self(array_slice($this->array, 0, $this->middle));
+  -    return new static(array_slice($this->array,$this->middle() + 1,1));
+  +    return new static(array_slice($this->array,$this->middle + 1,1));
+  +++ b/BinarySearch/BinarySearchTest.php
+  +  public function get_middle() {return $this->middle;}
+  -      $this->assertEquals(1, BinarySearch::create([1,2,3])->middle());
+  -      $this->assertEquals(0, BinarySearch::create([3])->middle());
+  -      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([])->middle());
+  +      $this->assertEquals(1, BinarySearchTestClass::create([1,2,3])->get_middle());
+  +      $this->assertEquals(0, BinarySearchTestClass::create([3])->get_middle());
+  +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearchTestClass::create([])->get_middle());
+```
+
 __todo__ X test split array
 __todo__ X split one element array
 __todo__ X split two element array
-__todo__ X change midlle function to private
 #### push lines ####
 

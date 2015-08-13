@@ -2,6 +2,7 @@
 
 class BinarySearchTestClass extends BinarySearch {
   public function get_array() {return $this->array;}
+  public function get_middle() {return $this->middle;}
 }
 
 class BinarySearchTest extends PHPUnit_Framework_TestCase { 
@@ -22,9 +23,9 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
     }
 
     public function test_get_the_middle_index() {
-      $this->assertEquals(1, BinarySearch::create([1,2,3])->middle());
-      $this->assertEquals(0, BinarySearch::create([3])->middle());
-      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([])->middle());
+      $this->assertEquals(1, BinarySearchTestClass::create([1,2,3])->get_middle());
+      $this->assertEquals(0, BinarySearchTestClass::create([3])->get_middle());
+      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearchTestClass::create([])->get_middle());
     }
 
     public function test_get_find_first_item_of_three() {
