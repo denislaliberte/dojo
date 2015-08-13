@@ -568,6 +568,11 @@ __todo__ 12.3 test last element
 +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3,4,5])->search(0));
 +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3,4,5])->search(6));
 +    }
+
+### commit de5de6b8598011b148281e147a519c306bb6b638      -     MAS-329 search in five element array
+- BinarySearch/BinarySearchTest.php
+- BinarySearch/readme.md
+
 ## search long chain
 ## do the kata in an iterative fashion
 
