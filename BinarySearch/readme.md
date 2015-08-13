@@ -530,10 +530,32 @@ class constant  |  http://bit.ly/1PnV2p9  | class a{ const B = 'c'; }; | assert(
 ## 12 search two element array
 
 __todo__ 12.1 test not found
+
+```php
+  +++ b/BinarySearch/BinarySearchTest.php
+  +
+  +    public function test_not_found_item_in_two_element_array() {
+  +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2])->search(0));
+  +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2])->search(3));
+  +    }
+```
+
 __todo__ 12.2 test first element
+
 __todo__ 12.3 test last element
 
 
++++ b/BinarySearch/BinarySearchTest.php
++
++    public function test_not_found_item_in_two_element_array() {
++      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2])->search(0));
++      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2])->search(3));
++    }
++
++    public function test_two_element_array() {
++      $this->assertEquals(0, BinarySearch::create([1,2])->search(1));
++      $this->assertEquals(1, BinarySearch::create([1,2])->search(2));
++    }
 
 
 ## search five element array
