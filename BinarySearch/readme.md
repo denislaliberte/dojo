@@ -502,7 +502,25 @@ class constant  |  http://bit.ly/1PnV2p9  | class a{ const B = 'c'; }; | assert(
   +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearchTestClass::create([])->get_middle());
 ```
 
-__todo__ X test split array
+### commit 9284c2fd8ed468aa3770d839b43527402f10df94      -     MAS-329 calculate the middle index one time only
+- BinarySearch/BinarySearch.php
+- BinarySearch/BinarySearchTest.php
+- BinarySearch/readme.md
+
+## 11 test split array
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  -  private function split() {
+  -    return new self(array_slice($this->array, 0, $this->middle));
+  +  public function split() {
+  +    return new static(array_slice($this->array, 0, $this->middle));
+  +++ b/BinarySearch/BinarySearchTest.php
+  +
+  +    public function test_split_array() {
+  +      $this->assertEquals([1], BinarySearchTestClass::create([1,2,3])->split()->get_array());
+  +    }
+```
 __todo__ X split one element array
 __todo__ X split two element array
 #### push lines ####

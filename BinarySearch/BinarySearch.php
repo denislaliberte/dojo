@@ -28,8 +28,8 @@ class BinarySearch {
     return round( (sizeof($array) -1) /2 );
   }
 
-  private function split() {
-    return new self(array_slice($this->array, 0, $this->middle));
+  public function split() {
+    return new static(array_slice($this->array, 0, $this->middle));
   }
 
   public function splitUp() {
