@@ -527,7 +527,15 @@ class constant  |  http://bit.ly/1PnV2p9  | class a{ const B = 'c'; }; | assert(
 - BinarySearch/BinarySearchTest.php
 - BinarySearch/readme.md
 
-## search two element array
+## 12 search two element array
+
+__todo__ 12.1 test not found
+__todo__ 12.2 test first element
+__todo__ 12.3 test last element
+
+
+
+
 ## search five element array
 ## search long chain
 ## do the kata in an iterative fashion
