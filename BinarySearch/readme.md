@@ -521,7 +521,17 @@ class constant  |  http://bit.ly/1PnV2p9  | class a{ const B = 'c'; }; | assert(
   +      $this->assertEquals([1], BinarySearchTestClass::create([1,2,3])->split()->get_array());
   +    }
 ```
-__todo__ X split one element array
-__todo__ X split two element array
+
+### commit d40699fabbda9e8c762667edf0ad4336e3905684  -  MAS-329 test split function
+- BinarySearch/BinarySearch.php
+- BinarySearch/BinarySearchTest.php
+- BinarySearch/readme.md
+
+## search two element array
+## search five element array
+## search long chain
+## do the kata in an iterative fashion
+
+
 #### push lines ####
 
