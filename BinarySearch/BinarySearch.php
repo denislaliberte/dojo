@@ -1,6 +1,7 @@
 <?php
 
 class BinarySearch {
+  const NOT_FOUND = -1;
   protected $array;
   public function __construct(array $array) {
     $this->array = $array;
@@ -11,11 +12,14 @@ class BinarySearch {
   }
 
   public function search($search) {
-    if(empty($this->array)) { return -1 ; }
+    if(empty($this->array)) { return self::NOT_FOUND ; }
     if($this->array[$this->middle()] == $search) { return $this->middle(); }
     if($this->array[$this->middle()] > $search) { return $this->split()->search($search); }
-    if($this->array[$this->middle()] < $search) { return 2; }
-    return -1;
+    if($this->array[$this->middle()] < $search) {
+      $upper_half_index = $this->splitUp()->search($search);
+      return  ($upper_half_index == self::NOT_FOUND) ? $upper_half_index : $this->middle() + 1 + $upper_half_index;
+    }
+    return self::NOT_FOUND;
   }
 
   public function middle() {

@@ -390,55 +390,83 @@ array split slice               | http://bit.ly/1NnNWQ9  | $a = array_slice([1,2
   -      $this->markTestIncomplete('asdf');
 ```
 
-### commit be671f95363af7fcb0c56ec900d31658c62f7641
-      find last of three elements
+### commit be671f95363af7fcb0c56ec900d31658c62f7641          -      find last of three elements
     BinarySearch/BinarySearch.php
     BinarySearch/BinarySearchTest.php
     BinarySearch/readme.md
+
 __todo__ 9.1 not find element bigger than the middle elements
 
-__todo__ 9.2 get the second half of the array
+__todo__ 9.2 get the second half of the array __done__
 
+__todo__ 9.2.1 acces private function in test __done__
 class self create children class instance in parent method |     | new static(); | php/static.php
-
+```php
   class a { public function return_static() { return new static(); } }
   class b extends a { }
   $c = new b();
   $d = $c->return_static();
   assert( get_class($d) == 'b');
+```
 
-class get class name  | http://bit.ly/1IHSEag | $a = get_class(new stdClass());  | assert($a == 'stdClass');
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  -  private $array;
+  +  protected $array;
+  -    return new self($array);
+  +    return new static($array);
+  +
+  +  public function splitUp() {
+  +    return new static(array_slice($this->array,$this->middle() + 1,1));
+  +  }
+  +++ b/BinarySearch/BinarySearchTest.php
+  +class BinarySearchTestClass extends BinarySearch {
+  +  public function get_array() {return $this->array;}
+  +}
+  +
+  -      $this->markTestIncomplete('asdf');
+  +      $this->markTestIncomplete('todo');
+  +
+  +    public function test_split_up_array() {
+  +      $this->assertEquals([3], BinarySearchTestClass::create([1,2,3])->splitUp()->get_array());
+  +    }
+```
 
-+++ b/BinarySearch/BinarySearch.php
--  private $array;
-+  protected $array;
--    return new self($array);
-+    return new static($array);
-+
-+  public function splitUp() {
-+    return new static(array_slice($this->array,$this->middle() + 1,1));
-+  }
-+++ b/BinarySearch/BinarySearchTest.php
-+class BinarySearchTestClass extends BinarySearch {
-+  public function get_array() {return $this->array;}
-+}
-+
--      $this->markTestIncomplete('asdf');
-+      $this->markTestIncomplete('todo');
-+
-+    public function test_split_up_array() {
-+      $this->assertEquals([3], BinarySearchTestClass::create([1,2,3])->splitUp()->get_array());
-+    }
-
-commit a9b9fb15a31a5d80c691eb4ee3c15d4e066490f0
-     MAS-301 get the upper half of the array
+### commit a9b9fb15a31a5d80c691eb4ee3c15d4e066490f0 -   MAS-301 get the upper half of the array
     BinarySearch/BinarySearch.php
     BinarySearch/BinarySearchTest.php
     BinarySearch/readme.md
-__todo__ 9.X split empty array
-__todo__ 9.X test split array
-__todo__ 9.X split two element array
 
-## X more than middle
+__todo__ 9.3 change magic number to not found constant
+class constant  |  http://bit.ly/1PnV2p9  | class a{ const B = 'c'; }; | assert(a::B == 'c');
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  +  const NOT_FOUND = -1;
+  -    if(empty($this->array)) { return -1 ; }
+  +    if(empty($this->array)) { return self::NOT_FOUND ; }
+  -    if($this->array[$this->middle()] < $search) { return 2; }
+  -    return -1;
+  +    if($this->array[$this->middle()] < $search) {
+  +      $upper_half_index = $this->splitUp()->search($search);
+  +      return  ($upper_half_index == self::NOT_FOUND) ? $upper_half_index : $this->middle() + 1 + $upper_half_index;
+  +    }
+  +    return self::NOT_FOUND;
+  +++ b/BinarySearch/BinarySearchTest.php
+  -      $this->assertEquals(-1, BinarySearch::create([])->search(1));
+  +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([])->search(1));
+  -      $this->markTestIncomplete('todo');
+  -      $this->assertEquals(-1, BinarySearch::create([1])->search(2));
+  +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1])->search(2));
+  -      $this->assertEquals(-1, BinarySearch::create([])->middle());
+  +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([])->middle());
+  -      $this->assertEquals(-1, BinarySearch::create([1,2,3])->search(0));
+  +      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3])->search(0));
+```
+
+__todo__ X test split array
+__todo__ X split one element array
+__todo__ X split two element array
+__todo__ X change midlle function to private
 #### push lines ####
 
