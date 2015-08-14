@@ -611,6 +611,10 @@ array count size length | http://bit.ly/1MrTYST | $a = count([1,2,3]); | assert(
 
 ## 15 search long chain
 
+### commit d8ece6c39ae725715ef599c24d6aaa453a97df52     -     MAS-329 search long arra
+    BinarySearch/BinarySearchTest.php
+    BinarySearch/readme.md
+
 ## do the kata in an iterative fashion
 
 
