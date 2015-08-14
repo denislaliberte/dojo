@@ -573,11 +573,14 @@ __todo__ 12.3 test last element
 - BinarySearch/BinarySearchTest.php
 - BinarySearch/readme.md
 
+
+## item not found between two value of array
+    assert_equal(-1, chop(2, [1, 3, 5]))
+    assert_equal(-1, chop(2, [1, 3, 5, 7]))
+
 ## search long chain
 ## do the kata in an iterative fashion
 
-    assert_equal(-1, chop(2, [1, 3, 5]))
-    assert_equal(-1, chop(2, [1, 3, 5, 7]))
 
 #### push lines ####
 
