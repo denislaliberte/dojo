@@ -1,6 +1,6 @@
 <?php
 
-class BinarySearch {
+class BinarySearchImmutable {
   const NOT_FOUND = -1;
   protected $array;
   protected $middle;

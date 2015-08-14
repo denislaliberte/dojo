@@ -1,6 +1,6 @@
 export note="$HOME/Sites/_perso/dojo.local/BinarySearch/readme.md"
 export n=$note
 alias vn="vim -O *"
-alias v="vim -O readme.md *php"
-alias p="phpunit --bootstrap BinarySearch.php BinarySearchTest.php"
+alias p="phpunit --bootstrap BinarySearchIterative.php  BinarySearchIterativeTest.php"
 alias pw="pywatch ./phpunit.sh *"
+alias v=" vim BinarySearchIterative.md BinarySearchIterative.php BinarySearchIterativeTest.php -O"
