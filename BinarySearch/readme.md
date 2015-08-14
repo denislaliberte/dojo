@@ -584,3 +584,6 @@ __todo__ 12.3 test last element
 
 #### push lines ####
 
+commit cba57d5db9cb3886f88e4b495d4ba766382587e4
+     MAS-329 not found between values
+BinarySearch/BinarySearchTest.php
