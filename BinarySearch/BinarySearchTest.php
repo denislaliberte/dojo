@@ -62,4 +62,9 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
       $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3,4,5])->search(0));
       $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,2,3,4,5])->search(6));
     }
+
+    public function test_not_found_between_two_value() {
+      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,3,5])->search(2));
+      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,3,5,7])->search(6));
+    }
 }
