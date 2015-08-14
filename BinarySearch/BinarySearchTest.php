@@ -73,7 +73,8 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
     }
 
     public function test_long_array() {
-        $this->markTestIncomplete();
       $this->assertEquals(6, BinarySearch::create([1,3,5,6,7,8,9,10])->search(9));
+      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,3,5,6,7,8,10])->search(9));
+      $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,3,5,6,7,8,10])->search(11));
     }
 }

@@ -603,7 +603,14 @@ array count size length | http://bit.ly/1MrTYST | $a = count([1,2,3]); | assert(
   +    }
 ```
 
-## search long chain
+### commit fb5c1202a292dd26cdbf384b51669574136e16c7   -  MAS-329 remove harcoded length
+  BinarySearch/BinarySearch.php
+  BinarySearch/BinarySearchTest.php
+  BinarySearch/readme.md
+  var.sh
+
+## 15 search long chain
+
 ## do the kata in an iterative fashion
 
 
