@@ -44,6 +44,10 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
       $this->assertEquals([3], BinarySearchTestClass::create([1,2,3])->splitUp()->get_array());
     }
 
+    public function test_split_up_big_array() {
+      $this->assertEquals([4,5], BinarySearchTestClass::create([1,2,3,4,5])->splitUp()->get_array());
+    }
+
     public function test_split_array() {
       $this->assertEquals([1], BinarySearchTestClass::create([1,2,3])->split()->get_array());
     }
@@ -66,5 +70,10 @@ class BinarySearchTest extends PHPUnit_Framework_TestCase {
     public function test_not_found_between_two_value() {
       $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,3,5])->search(2));
       $this->assertEquals(BinarySearch::NOT_FOUND, BinarySearch::create([1,3,5,7])->search(6));
+    }
+
+    public function test_long_array() {
+        $this->markTestIncomplete();
+      $this->assertEquals(6, BinarySearch::create([1,3,5,6,7,8,9,10])->search(9));
     }
 }

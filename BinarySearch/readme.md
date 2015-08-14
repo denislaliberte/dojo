@@ -574,16 +574,37 @@ __todo__ 12.3 test last element
 - BinarySearch/readme.md
 
 
-## item not found between two value of array
+## 13 item not found between two value of array
     assert_equal(-1, chop(2, [1, 3, 5]))
     assert_equal(-1, chop(2, [1, 3, 5, 7]))
+
+commit cba57d5db9cb3886f88e4b495d4ba766382587e4
+     MAS-329 not found between values
+BinarySearch/BinarySearchTest.php
+
+## 14 remove the harcoded length in the split up
+array count size length | http://bit.ly/1MrTYST | $a = count([1,2,3]); | assert($a=3);
+
+```php
+  +++ b/BinarySearch/BinarySearch.php
+  +  protected $size;
+  +    $this->size = count($array);
+  -    return new static(array_slice($this->array,$this->middle + 1,1));
+  +    return new static(array_slice($this->array,$this->middle + 1,$this->size));
+  +++ b/BinarySearch/BinarySearchTest.php
+  +    public function test_split_up_big_array() {
+  +      $this->assertEquals([4,5], BinarySearchTestClass::create([1,2,3,4,5])->splitUp()->get_array());
+  +    }
+  +
+  +
+  +    public function test_long_array() {
+  +        $this->markTestIncomplete();
+  +      $this->assertEquals(6, BinarySearch::create([1,3,5,6,7,8,9,10])->search(9));
+  +    }
+```
 
 ## search long chain
 ## do the kata in an iterative fashion
 
 
 #### push lines ####
-
-commit cba57d5db9cb3886f88e4b495d4ba766382587e4
-     MAS-329 not found between values
-BinarySearch/BinarySearchTest.php

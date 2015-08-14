@@ -4,9 +4,11 @@ class BinarySearch {
   const NOT_FOUND = -1;
   protected $array;
   protected $middle;
+  protected $size;
   public function __construct(array $array) {
     $this->array = $array;
     $this->middle = self::middle($array);
+    $this->size = count($array);
   }
 
   static public function create(array $array) {
@@ -33,6 +35,6 @@ class BinarySearch {
   }
 
   public function splitUp() {
-    return new static(array_slice($this->array,$this->middle + 1,1));
+    return new static(array_slice($this->array,$this->middle + 1,$this->size));
   }
 }
