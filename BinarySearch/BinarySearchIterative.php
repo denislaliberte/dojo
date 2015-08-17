@@ -4,8 +4,10 @@
 function BinarySearchIterative($item, array $array) {
   if(empty($array)) { return -1; }
   $middle = middleIndex($array);
-  if($array[$middle] == $item) { return $middle; }
-  if($item  < $array[$middle] && $item  == $array[0]) { return 0; }
+  do {
+    if($item  < $array[$middle]) { $middle = floor($middle /2);  }
+    if($array[$middle] == $item) { return $middle; }
+  }while($middle > 0);
   return -1;
 }
 
