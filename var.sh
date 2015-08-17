@@ -1,4 +1,4 @@
-export note="$HOME/Sites/_perso/dojo.local/BinarySearch/readme.md"
+export note="$HOME/Sites/_perso/dojo.local/BinarySearch/BinarySearchIterative.md"
 export n=$note
 alias vn="vim -O *"
 alias p="phpunit --bootstrap BinarySearchIterative.php  BinarySearchIterativeTest.php"
