@@ -54,6 +54,13 @@ var.sh
 
 ## 3 empty list
 
+commit afb7299900335dbc8c4e6d402807083dce79cfb9
+     MAS-319 empty not found
+BinarySearch/BinarySearchIterative.md
+BinarySearch/BinarySearchIterative.php
+BinarySearch/BinarySearchIterativeTest.php
+BinarySearch/readme.md
+var.sh
 
 ## X item not found
 ## X middle of three items
