@@ -62,7 +62,7 @@ BinarySearch/BinarySearchIterativeTest.php
 BinarySearch/readme.md
 var.sh
 
-## X item not found
+## 4 item not found
 
 commit d2a714fde5af859dc42a31dc06035982b66c164c
      MAS-319 not found one item
@@ -70,5 +70,11 @@ BinarySearch/BinarySearchIterative.md
 BinarySearch/BinarySearchIterative.php
 BinarySearch/BinarySearchIterativeTest.php
 
-## X middle of three items
+## 5 middle of three items
 marck pending incomplete  |  http://bit.ly/1HDXt0z  |  $this->markTestIncomplete('asdf');
+commit f2804d385139407b1d5239c47e2227c925f6de8a
+     MAS-319 add pendinfg test for middle item
+BinarySearch/BinarySearchIterative.md
+BinarySearch/BinarySearchIterativeTest.php
+
+__todo__ 5.1 function to find the middle of an array

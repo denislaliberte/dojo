@@ -7,3 +7,6 @@ function BinarySearchIterative($item, array $array) {
   return -1;
 }
 
+function middleIndex(array $aarray) {
+    return 0;
+}

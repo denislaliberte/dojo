@@ -17,4 +17,9 @@ class aTest extends PHPUnit_Framework_TestCase {
   $this->markTestIncomplete('asdf');
     $this->assertEquals(1,BinarySearchIterative(3,[1,3,5]));
   }
+
+  public function test_calculate_the_middle_index_of_an_array() {
+    $this->assertEquals(0,middleIndex([]));
+
+  }
 }
