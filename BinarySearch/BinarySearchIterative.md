@@ -77,7 +77,7 @@ commit f2804d385139407b1d5239c47e2227c925f6de8a
 BinarySearch/BinarySearchIterative.md
 BinarySearch/BinarySearchIterativeTest.php
 
-__todo__ 5.1 function to find the middle of an array
+__todo__ 5.1 function to find the middle of an array __done__
 commit a81c084b39f4f42a0ddc5d726e9a59d9f9bcd994
      MAS-319 middle index first test empty array
 BinarySearch/BinarySearchIterative.md
@@ -93,3 +93,11 @@ BinarySearch/BinarySearchIterativeTest.php
 
 
 
+commit 37fde4a67d701f2e36824b23f7f6465d5377717b
+     MAS-319 found the middle item of an array
+BinarySearch/BinarySearchIterative.md
+BinarySearch/BinarySearchIterative.php
+BinarySearch/BinarySearchIterativeTest.php
+
+
+## 6 fond the first item of an array

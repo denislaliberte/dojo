@@ -5,6 +5,7 @@ function BinarySearchIterative($item, array $array) {
   if(empty($array)) { return -1; }
   $middle = middleIndex($array);
   if($array[$middle] == $item) { return $middle; }
+  if($item  < $array[$middle] && $item  == $array[0]) { return 0; }
   return -1;
 }
 
