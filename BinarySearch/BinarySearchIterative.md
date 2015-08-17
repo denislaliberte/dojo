@@ -63,5 +63,11 @@ BinarySearch/readme.md
 var.sh
 
 ## X item not found
-## X middle of three items
 
+commit d2a714fde5af859dc42a31dc06035982b66c164c
+     MAS-319 not found one item
+BinarySearch/BinarySearchIterative.md
+BinarySearch/BinarySearchIterative.php
+BinarySearch/BinarySearchIterativeTest.php
+
+## X middle of three items
