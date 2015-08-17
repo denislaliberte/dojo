@@ -1,7 +1,7 @@
 <?php
 
 
-function BinarySearchIterative() {
-  return true;
+function BinarySearchIterative($item, array $array) {
+  return 0;
 }
 
