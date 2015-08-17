@@ -83,3 +83,13 @@ commit a81c084b39f4f42a0ddc5d726e9a59d9f9bcd994
 BinarySearch/BinarySearchIterative.md
 BinarySearch/BinarySearchIterative.php
 BinarySearch/BinarySearchIterativeTest.php
+
+commit 46d67c5fad263f322f16e07e01ab3cac79a5425b
+     MAS-319 found the middle index of an array"
+    "
+BinarySearch/BinarySearchIterative.md
+BinarySearch/BinarySearchIterative.php
+BinarySearch/BinarySearchIterativeTest.php
+
+
+

@@ -14,7 +14,6 @@ class aTest extends PHPUnit_Framework_TestCase {
   }
 
   public function test_three_item_found_the_middle_one() {
-  $this->markTestIncomplete('asdf');
     $this->assertEquals(1,BinarySearchIterative(3,[1,3,5]));
   }
 
