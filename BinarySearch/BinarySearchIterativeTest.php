@@ -27,7 +27,8 @@ class aTest extends PHPUnit_Framework_TestCase {
     $this->assertEquals(2,middleIndex([1,2,3,4]));
   }
 
-  public function test_find_the_first_item() {
+  public function test_find_the_first_of_three_item() {
     $this->assertEquals(0,BinarySearchIterative(1,[1,3,5]));
   }
+
 }

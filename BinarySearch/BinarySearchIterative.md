@@ -101,3 +101,8 @@ BinarySearch/BinarySearchIterativeTest.php
 
 
 ## 6 fond the first item of an array
+commit f69aea1e48c0c62462bfe0c5f560d555f16dbcc3
+     MAS-319 find the first item of three
+BinarySearch/BinarySearchIterative.md
+BinarySearch/BinarySearchIterative.php
+BinarySearch/BinarySearchIterativeTest.php
