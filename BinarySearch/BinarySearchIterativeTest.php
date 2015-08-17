@@ -18,8 +18,13 @@ class aTest extends PHPUnit_Framework_TestCase {
     $this->assertEquals(1,BinarySearchIterative(3,[1,3,5]));
   }
 
-  public function test_calculate_the_middle_index_of_an_array() {
+  public function test_calculate_the_middle_index_of_an_empty_array() {
     $this->assertEquals(0,middleIndex([]));
+  }
 
+  public function test_calculate_the_middle_index_of_an_array() {
+    $this->assertEquals(1,middleIndex([1,2,3]));
+    $this->assertEquals(2,middleIndex([1,2,3,4,5]));
+    $this->assertEquals(2,middleIndex([1,2,3,4]));
   }
 }

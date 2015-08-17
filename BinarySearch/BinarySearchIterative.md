@@ -78,3 +78,8 @@ BinarySearch/BinarySearchIterative.md
 BinarySearch/BinarySearchIterativeTest.php
 
 __todo__ 5.1 function to find the middle of an array
+commit a81c084b39f4f42a0ddc5d726e9a59d9f9bcd994
+     MAS-319 middle index first test empty array
+BinarySearch/BinarySearchIterative.md
+BinarySearch/BinarySearchIterative.php
+BinarySearch/BinarySearchIterativeTest.php
