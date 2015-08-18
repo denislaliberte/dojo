@@ -34,4 +34,8 @@ class aTest extends PHPUnit_Framework_TestCase {
   public function test_find_second_of_five_item() {
     $this->assertEquals(1,BinarySearchIterative(3,[1,3,5,7,9]));
   }
+
+  public function test_find_last_of_three_items() {
+    $this->assertEquals(2,BinarySearchIterative(5,[1,3,5]));
+  }
 }

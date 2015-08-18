@@ -60,8 +60,6 @@ BinarySearch/BinarySearchIterative.md
 BinarySearch/BinarySearchIterative.php
 BinarySearch/BinarySearchIterativeTest.php
 BinarySearch/readme.md
-var.sh
-
 ## 4 item not found
 
 commit d2a714fde5af859dc42a31dc06035982b66c164c
@@ -115,3 +113,4 @@ BinarySearch/BinarySearchIterativeTest.php
 ## 7 find last value of three items
 
 ## X refactor to only one return
+## X recator remove duplication with middleIndex
