@@ -111,6 +111,7 @@ BinarySearch/BinarySearchIterative.php
 BinarySearch/BinarySearchIterativeTest.php
 
 ## 7 find last value of three items
+### git commit [ 5e6dc69 ] :  MAS-309 find the last of three items  Tue Aug 18 12:51:41 2015 -0400
 
 ## X refactor to only one return
 ## X recator remove duplication with middleIndex
