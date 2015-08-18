@@ -106,7 +106,12 @@ commit f69aea1e48c0c62462bfe0c5f560d555f16dbcc3
 BinarySearch/BinarySearchIterative.md
 BinarySearch/BinarySearchIterative.php
 BinarySearch/BinarySearchIterativeTest.php
+
 commit 605eca8c0eea22ac28095723ebd541ca871cb4dd
      MAS-319 found the second of five item
 BinarySearch/BinarySearchIterative.php
 BinarySearch/BinarySearchIterativeTest.php
+
+## 7 find last value of three items
+
+## X refactor to only one return
