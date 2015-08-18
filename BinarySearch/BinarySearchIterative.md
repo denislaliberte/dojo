@@ -113,5 +113,20 @@ BinarySearch/BinarySearchIterativeTest.php
 ## 7 find last value of three items
 ### git commit [ 5e6dc69 ] :  MAS-309 find the last of three items  Tue Aug 18 12:51:41 2015 -0400
 
+## 8  find last of five elements
+
+php > $min = 0;
+php > $max = 10;
+php > $middle = 0;
+php > $middle = floor( ($max - $middle ) /2) + $middle; print $middle;
+5
+php > $middle = floor( ($max - $middle ) /2) + $middle; print $middle;
+7
+php > $middle = floor( ($max - $middle ) /2) + $middle; print $middle;
+8
+php > $middle = floor( ($max - $middle ) /2) + $middle; print $middle;
+9
+
+## 9 recfator remove duplication with middleIndex
+
 ## X refactor to only one return
-## X recator remove duplication with middleIndex
