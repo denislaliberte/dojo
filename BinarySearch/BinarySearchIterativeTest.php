@@ -18,13 +18,13 @@ class aTest extends PHPUnit_Framework_TestCase {
   }
 
   public function test_calculate_the_middle_index_of_an_empty_array() {
-    $this->assertEquals(0,middleIndex(count([])));
+    $this->assertEquals(0,middleIndex(0,count([])));
   }
 
   public function test_calculate_the_middle_index_of_an_array() {
-    $this->assertEquals(1,middleIndex(count([1,2,3])));
-    $this->assertEquals(2,middleIndex(count([1,2,3,4,5])));
-    $this->assertEquals(2,middleIndex(count([1,2,3,4])));
+    $this->assertEquals(1,middleIndex(0,count([1,2,3])));
+    $this->assertEquals(2,middleIndex(0,count([1,2,3,4,5])));
+    $this->assertEquals(2,middleIndex(0,count([1,2,3,4])));
   }
 
   public function test_find_the_first_of_three_item() {
@@ -40,7 +40,6 @@ class aTest extends PHPUnit_Framework_TestCase {
   }
 
   public function test_find_last_of_five_items() {
-    $this->markTestIncomplete('asdf');
     $this->assertEquals(4,BinarySearchIterative(9,[1,3,5,7,9]));
   }
 }
