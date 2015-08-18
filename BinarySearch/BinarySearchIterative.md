@@ -129,4 +129,6 @@ php > $middle = floor( ($max - $middle ) /2) + $middle; print $middle;
 
 ## 9 recfator remove duplication with middleIndex
 
+### git commit [ 6bd2b9b ] :  RBD-97 find last of five elements  Tue Aug 18 18:06:53 2015 -0400
+
 ## X refactor to only one return
