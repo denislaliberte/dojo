@@ -1,7 +1,6 @@
 <?php
 
 function BinarySearchIterative2() {
-  return true;
-
+  return 0;
 }
 
