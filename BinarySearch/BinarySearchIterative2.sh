@@ -1,2 +1,2 @@
 #!/bin/bash
-phpunit --bootstrap BinarySearchIterative2.php BinarySearchIterativeTest2.php --verbose
+phpunit --bootstrap BinarySearchIterative2.php BinarySearchIterative2Test.php --verbose
