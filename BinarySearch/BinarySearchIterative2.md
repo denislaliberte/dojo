@@ -46,10 +46,11 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
 +    $this->assertEquals(1, BinarySearchIterative2(3,[1,3,5]));
 +  }
 
+### git commit [ d5cbd5d ] :   find the middle item  Wed Aug 19 19:07:18 2015 -0400
+
 ## 3 find item smaller than the middle item
 
 ## 4 find item bigger than the middle
 
 
 #### push lines ####
-
