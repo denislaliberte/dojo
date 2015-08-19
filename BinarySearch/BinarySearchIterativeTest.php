@@ -18,7 +18,7 @@ class aTest extends PHPUnit_Framework_TestCase {
   }
 
   public function test_calculate_the_middle_index_of_an_empty_array() {
-    $this->assertEquals(0,middleIndex(0,count([])));
+    $this->assertEquals(-1,middleIndex(0,count([])));
   }
 
   public function test_calculate_the_middle_index_of_an_array() {

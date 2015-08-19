@@ -131,4 +131,6 @@ php > $middle = floor( ($max - $middle ) /2) + $middle; print $middle;
 
 ### git commit [ 6bd2b9b ] :  RBD-97 find last of five elements  Tue Aug 18 18:06:53 2015 -0400
 
-## X refactor to only one return
+## 10 refactor to only one return
+### git commit [ b327330 ] :  RBD-97 refactor to remove return inside of while loop  Tue Aug 18 18:09:45 2015 -0400
+
