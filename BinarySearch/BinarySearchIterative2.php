@@ -2,9 +2,13 @@
 
 function BinarySearchIterative2($item, array $array) {
   if(empty($array)) return -1;
-  $middle = floor(count($array) /2);
-  if($item == $array[$middle]) return $middle;
-  if($item == $array[0]) return 0;
+  $max = count($array);
+  $min = 0;
+  while($max > $min) {
+    $middle = floor(($max - $min)/2);
+    if($item == $array[$middle]) return $middle;
+    $max = $middle;
+  }
   return -1;
 }
 

@@ -16,4 +16,9 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
   function test_find_item_in_the_middle_of_three() {
     $this->assertEquals(1, BinarySearchIterative2(3,[1,3,5]));
   }
+
+  function test_find_second_item_of_five() {
+    $this->assertEquals(1, BinarySearchIterative2(2,[1,2,3,4,5]));
+
+  }
 }

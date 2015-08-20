@@ -54,3 +54,20 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
 
 
 #### push lines ####
++++ b/BinarySearch/BinarySearchIterative2.php
+-  $middle = floor(count($array) /2);
+-  if($item == $array[$middle]) return $middle;
+-  if($item == $array[0]) return 0;
++  $max = count($array);
++  $min = 0;
++  while($max > $min) {
++    $middle = floor(($max - $min)/2);
++    if($item == $array[$middle]) return $middle;
++    $max = $middle;
++  }
++++ b/BinarySearch/BinarySearchIterative2Test.php
++
++  function test_find_second_item_of_five() {
++    $this->assertEquals(1, BinarySearchIterative2(2,[1,2,3,4,5]));
++
++  }
