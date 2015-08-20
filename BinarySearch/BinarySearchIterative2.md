@@ -82,3 +82,7 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
 +  function test_find_elements_bigger_than_the_middle_element() {
 +    $this->assertEquals(2, BinarySearchIterative2(5,[1,3,5]));
 +  }
+### git commit [ d34687c ] :   find last of three elements  Thu Aug 20 18:52:32 2015 -0400
+
+Si on cherche un élément non troué plus grand que le millieu on tombe dans une boucle infinie
+php > var_dump( BinarySearchIterative2(6,[1,3,5,7,9]) );
