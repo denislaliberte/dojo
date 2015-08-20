@@ -5,9 +5,10 @@ function BinarySearchIterative2($item, array $array) {
   $max = count($array);
   $min = 0;
   while($max > $min) {
-    $middle = floor(($max - $min)/2);
+    $middle = floor(($max - $min)/2) +$min;
     if($item == $array[$middle]) return $middle;
-    $max = $middle;
+    if($item < $array[$middle]) $max = $middle;
+    if($item > $array[$middle]) $min = $middle;
   }
   return -1;
 }
