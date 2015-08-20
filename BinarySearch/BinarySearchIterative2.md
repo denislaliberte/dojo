@@ -50,9 +50,6 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
 
 ## 3 find item smaller than the middle item
 
-## 4 find item bigger than the middle
-
-
 #### push lines ####
 +++ b/BinarySearch/BinarySearchIterative2.php
 -  $middle = floor(count($array) /2);
@@ -71,3 +68,6 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
 +    $this->assertEquals(1, BinarySearchIterative2(2,[1,2,3,4,5]));
 +
 +  }
+### git commit [ 1bdc0f5 ] :   find smaller ellements  Thu Aug 20 18:44:42 2015 -0400
+
+## 4 find item bigger than the middle
