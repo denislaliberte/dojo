@@ -86,3 +86,15 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
 
 Si on cherche un élément non troué plus grand que le millieu on tombe dans une boucle infinie
 php > var_dump( BinarySearchIterative2(6,[1,3,5,7,9]) );
+
+
++++ b/BinarySearch/BinarySearchIterative2.md
++
++
++++ b/BinarySearch/BinarySearchIterative2.php
+-    $middle = floor(($max - $min)/2) +$min;
++    $middle = get_middle_index($min, $max);
++function get_middle_index($min, $max) {
++  return floor(($max - $min)/2) +$min;
++}
++++ b/BinarySearch/BinarySearchIterative2Test.php

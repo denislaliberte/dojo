@@ -19,7 +19,6 @@ class BinarySearchIterative2Test extends PHPUnit_Framework_TestCase {
 
   function test_find_second_item_of_five() {
     $this->assertEquals(1, BinarySearchIterative2(2,[1,2,3,4,5]));
-
   }
 
   function test_find_elements_bigger_than_the_middle_element() {
