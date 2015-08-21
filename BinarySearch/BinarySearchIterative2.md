@@ -98,3 +98,15 @@ php > var_dump( BinarySearchIterative2(6,[1,3,5,7,9]) );
 +  return floor(($max - $min)/2) +$min;
 +}
 +++ b/BinarySearch/BinarySearchIterative2Test.php
+### git commit [ 35437c1 ] :   extract middle index function'  Fri Aug 21 17:44:38 2015 -0400
++++ b/BinarySearch/BinarySearchIterative2.md
+ +++ b/BinarySearch/BinarySearchIterative2Test.php
++### git commit [ 35437c1 ] :   extract middle index function'  Fri Aug 21 17:44:38 2015 -0400
++++ b/BinarySearch/BinarySearchIterative2.php
+-    if($item > $array[$middle]) $min = $middle;
++    if($item > $array[$middle]) $min = $middle +1;
++++ b/BinarySearch/BinarySearchIterative2Test.php
++
++  function test_bigger_element_not_found() {
++    $this->assertEquals(-1, BinarySearchIterative2(10,[1,3,5,7,9]));
++  }

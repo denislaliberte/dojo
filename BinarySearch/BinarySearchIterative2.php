@@ -8,7 +8,7 @@ function BinarySearchIterative2($item, array $array) {
     $middle = get_middle_index($min, $max);
     if($item == $array[$middle]) return $middle;
     if($item < $array[$middle]) $max = $middle;
-    if($item > $array[$middle]) $min = $middle;
+    if($item > $array[$middle]) $min = $middle +1;
   }
   return -1;
 }
