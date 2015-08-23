@@ -11,8 +11,8 @@ shelf : /Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1
   tache     | optimiste | pessiiste | réel | différence
   ----------|--------|----------|----------
   analyse   | 15     | 30       | 15
-  setup   | 15     | 30       |
-  AT     | 15     | 30
+  setup     | 15     | 30       | 15
+  AT        | 15     | 30          | 15 
   empty     | 15     | 30
   fizz      | 15     | 30
   buzz    | 15     | 30
@@ -34,7 +34,7 @@ For a given natural number greater than zero return:
 “fizzbuzz” if the number is dividable by 15
 the same number if no other requirement is fulfilled
 
-  2015-08-23--11-20
+  2015-08-23--11-35
 ### git commit [ c14e15d ] :  fb-1 analyse  Sun Aug 23 11:36:08 2015 -0400
 
 ## setup
@@ -50,6 +50,7 @@ load file before test | phpunit --bootstrap a.php |phpunit --help |grep bootstra
 
 marck pending incomplete  |  http://bit.ly/1HDXt0z  |  $this->markTestIncomplete('asdf');
 
+### git commit [ 3836f76 ] :  fb-1 add acceptance test  Sun Aug 23 12:02:55 2015 -0400
 
 ##  empty
 ##  fizz
