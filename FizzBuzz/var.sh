@@ -14,3 +14,5 @@ export note=/Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-
 export s=/Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1
 export n=/Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1-fizzbuzz-first-iteration.md
 
+alias v="vim -O $note *"
+alias p="phpunit FizzbuzzTest.php"
