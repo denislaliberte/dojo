@@ -1,6 +1,24 @@
-# FizzBuzz Kata in PHP
+# fb-1 fizzbuzz first iteration 2015-08-23
 
-## 1 requirements
+[ url jira ](https://touspourun.atlassian.net/browse/fb-1)
+shelf : /Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1
+
+## 1 analyse
+  2015-08-23--11-20
+
+### 1.0 estimation
+
+  tache     | optimiste | pessiiste | réel | différence
+  ----------|--------|----------|----------
+  analyse   | 15     | 30       | 15
+  setup   | 15     | 30       |
+  AT     | 15     | 30
+  empty     | 15     | 30
+  fizz      | 15     | 30
+  buzz    | 15     | 30
+  fizzbuzz   | 15     | 30
+  liste   | 15     | 30
+  more test   | 15     | 30
 
 __question__ 1.1 quels sont les requis pour le kata fizzbuzz __réponse__ retourner fizz si multiple de 3 buzz si multiple de 5 fizzbuzz si multiple de 15
   __search_google:__ fizz buzz kata
@@ -16,7 +34,31 @@ For a given natural number greater than zero return:
 “fizzbuzz” if the number is dividable by 15
 the same number if no other requirement is fulfilled
 
-## 2 setup
+  2015-08-23--11-20
 
+## setup
 __question__ est-ce que phpunit est installé
-__question__ est-ce que je peux simplement appeler un fichier avec php unit
+
+##  AT
+##  empty
+##  fizz
+##  buzz
+##  fizzbuzz
+##  liste
+##  more test
+
+## X
+__question__ X
+__todo__ X
+
+
+## X finalisation
+
+git rebase
+resume doc
+deploy
+
+
+#### push lines ####
+
+  
