@@ -42,7 +42,15 @@ __question__ est-ce que phpunit est installé __réponse__ oui
 test class  |  http://bit.ly/1Tm6Sk2  |  class aTest extends PHPUnit_Framework_TestCase { }
 load file before test | phpunit --bootstrap a.php |phpunit --help |grep bootstrap
 
++++ b/FizzBuzz/php/FizzbuzzTest.php
+-    $this->assertTrue(true);
++    $this->assertTrue(fizzbuzz());
+### git commit [ ced19dc ] :  fb-1 add function file to bootstrap  Sun Aug 23 11:54:12 2015 -0400
 ##  AT
+
+marck pending incomplete  |  http://bit.ly/1HDXt0z  |  $this->markTestIncomplete('asdf');
+
+
 ##  empty
 ##  fizz
 ##  buzz
@@ -50,24 +58,5 @@ load file before test | phpunit --bootstrap a.php |phpunit --help |grep bootstra
 ##  liste
 ##  more test
 
-## X
-__question__ X
-__todo__ X
-
-
-## X finalisation
-
-git rebase
-resume doc
-deploy
-
 
 #### push lines ####
-+++ b/FizzBuzz/08/2015-08-23--fb-1-fizzbuzz-first-iteration.md
-+load file before test | phpunit --bootstrap a.php |phpunit --help |grep bootstrap
--  
-+++ b/FizzBuzz/php/FizzbuzzTest.php
--    $this->assertTrue(true);
-+    $this->assertTrue(fizzbuzz());
-+++ b/FizzBuzz/var.sh
-+alias p="phpunit --bootstrap Fizzbuzz.php FizzbuzzTest.php"
