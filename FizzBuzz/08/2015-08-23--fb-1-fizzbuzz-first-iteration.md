@@ -40,6 +40,7 @@ the same number if no other requirement is fulfilled
 ## setup
 __question__ est-ce que phpunit est installé __réponse__ oui
 test class  |  http://bit.ly/1Tm6Sk2  |  class aTest extends PHPUnit_Framework_TestCase { }
+load file before test | phpunit --bootstrap a.php |phpunit --help |grep bootstrap
 
 ##  AT
 ##  empty
@@ -62,5 +63,11 @@ deploy
 
 
 #### push lines ####
-
-  
++++ b/FizzBuzz/08/2015-08-23--fb-1-fizzbuzz-first-iteration.md
++load file before test | phpunit --bootstrap a.php |phpunit --help |grep bootstrap
+-  
++++ b/FizzBuzz/php/FizzbuzzTest.php
+-    $this->assertTrue(true);
++    $this->assertTrue(fizzbuzz());
++++ b/FizzBuzz/var.sh
++alias p="phpunit --bootstrap Fizzbuzz.php FizzbuzzTest.php"
