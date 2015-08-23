@@ -64,11 +64,3 @@ deploy
 #### push lines ####
 
   
-+++ b/FizzBuzz/08/2015-08-23--fb-1-fizzbuzz-first-iteration.md
-+ fb-1 fizzbuzz first iteration 2015-08-23
-+### git commit [ c14e15d ] :  fb-1 analyse  Sun Aug 23 11:36:08 2015 -0400
-+__question__ est-ce que phpunit est installé __réponse__ oui
-+test class  |  http://bit.ly/1Tm6Sk2  |  class aTest extends PHPUnit_Framework_TestCase { }
-+++ b/FizzBuzz/var.sh
-+alias v="vim -O $note *"
-+alias p="phpunit FizzbuzzTest.php"
