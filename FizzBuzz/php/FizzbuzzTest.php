@@ -1,8 +1,10 @@
 <?php
 
 class FizzbuzzTest extends PHPUnit_Framework_TestCase { 
+  /**
+   * @group acceptance
+   */
   function test_acceptance_test() {
-    $this->markTestIncomplete('wip');
     $expected_result = [
       1,
       2,
@@ -20,7 +22,11 @@ class FizzbuzzTest extends PHPUnit_Framework_TestCase {
       14,
       'fizzbuzz',
       ];
-    $this->assertEquals($expected_result,fizzbuzz(range(11,15)));
+    $this->assertEquals($expected_result,fizzbuzz(range(1,15)));
+  }
+
+  function test_unchange_number() {
+    $this->assertEquals([1], fizzbuzz([1]) );
   }
 }
 

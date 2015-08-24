@@ -15,4 +15,4 @@ export s=/Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1
 export n=/Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1-fizzbuzz-first-iteration.md
 
 alias v="vim -O $note *"
-alias p="phpunit --bootstrap Fizzbuzz.php FizzbuzzTest.php"
+alias p="phpunit --bootstrap Fizzbuzz.php --exclude-group acceptance FizzbuzzTest.php "

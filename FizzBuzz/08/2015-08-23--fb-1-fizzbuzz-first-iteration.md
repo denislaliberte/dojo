@@ -12,7 +12,7 @@ shelf : /Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1
   ----------|--------|----------|----------
   analyse   | 15     | 30       | 15
   setup     | 15     | 30       | 15
-  AT        | 15     | 30          | 15 
+  AT        | 15     | 30          | 30
   empty     | 15     | 30
   fizz      | 15     | 30
   buzz    | 15     | 30
@@ -52,12 +52,18 @@ marck pending incomplete  |  http://bit.ly/1HDXt0z  |  $this->markTestIncomplete
 
 ### git commit [ 3836f76 ] :  fb-1 add acceptance test  Sun Aug 23 12:02:55 2015 -0400
 
-##  empty
+2015-08-23--22-20
+
+tag test fiter some to run | http://bit.ly/1KG2B6o | /** @group a
+filter group test | http://bit.ly/1KG2B6o | --exclude-group a
+
+##  unchange numbers
+2015-08-23-22-30
+
 ##  fizz
 ##  buzz
 ##  fizzbuzz
 ##  liste
 ##  more test
-
 
 #### push lines ####
