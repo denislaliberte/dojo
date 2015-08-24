@@ -110,3 +110,4 @@ php > var_dump( BinarySearchIterative2(6,[1,3,5,7,9]) );
 +  function test_bigger_element_not_found() {
 +    $this->assertEquals(-1, BinarySearchIterative2(10,[1,3,5,7,9]));
 +  }
+### git commit [ f5a08b8 ] :   not found bigger item  Fri Aug 21 18:11:48 2015 -0400
