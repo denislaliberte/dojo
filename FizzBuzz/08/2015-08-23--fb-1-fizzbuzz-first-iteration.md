@@ -95,9 +95,25 @@ __todo__ return fizz on 6
 +  function test_change_six_to_fizz() {
 +    $this->assertEquals(['fizz'], fizzbuzz([6]) );
 +  }
+
 ##  buzz
 ##  fizzbuzz
 ##  liste
 ##  more test
 
 #### push lines ####
++++ b/FizzBuzz/php/Fizzbuzz.php
+-  return array_map(function($a){ return ($a % 3 === 0) ?'fizz':$a;}, $input);
++  return array_map(
++    function($a){
++      if($a % 3 === 0) return 'fizz';
++      if($a % 5 === 0) return 'buzz';
++      return $a;
++    }, 
++    $input
++  );
++++ b/FizzBuzz/php/FizzbuzzTest.php
++
++  function test_change_five_to_buzz() {
++    $this->assertEquals(['buzz'], fizzbuzz([5]) );
++  }
