@@ -44,6 +44,10 @@ class FizzbuzzTest extends PHPUnit_Framework_TestCase {
   function test_multiple_of_3_and_5_change_to_fizz_buzz() {
     $this->assertEquals(['fizzbuzz'], fizzbuzz([15]) );
   }
+
+  function test_empty_input() {
+    $this->assertEquals([], fizzbuzz([]) );
+  }
 }
 
 
