@@ -76,7 +76,7 @@ array(5) {
 }
 
 ##  fizz
-__todo__ return 3 on fizz
+__todo__ return fizz on 3
 +++ b/FizzBuzz/php/Fizzbuzz.php
 -  return $input;
 +  return array_map(function($a){ return $a == 3 ?'fizz':$a;}, $input);
@@ -86,6 +86,15 @@ __todo__ return 3 on fizz
 +    $this->assertEquals(['fizz'], fizzbuzz([3]) );
 +  }
 
+__todo__ return fizz on 6
++++ b/FizzBuzz/php/Fizzbuzz.php
+-  return array_map(function($a){ return $a == 3 ?'fizz':$a;}, $input);
++  return array_map(function($a){ return ($a % 3 === 0) ?'fizz':$a;}, $input);
++++ b/FizzBuzz/php/FizzbuzzTest.php
++
++  function test_change_six_to_fizz() {
++    $this->assertEquals(['fizz'], fizzbuzz([6]) );
++  }
 ##  buzz
 ##  fizzbuzz
 ##  liste

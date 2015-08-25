@@ -32,6 +32,10 @@ class FizzbuzzTest extends PHPUnit_Framework_TestCase {
   function test_change_three_to_fizz() {
     $this->assertEquals(['fizz'], fizzbuzz([3]) );
   }
+
+  function test_change_six_to_fizz() {
+    $this->assertEquals(['fizz'], fizzbuzz([6]) );
+  }
 }
 
 
