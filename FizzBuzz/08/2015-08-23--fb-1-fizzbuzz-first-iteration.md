@@ -61,7 +61,30 @@ filter group test | http://bit.ly/1KG2B6o | --exclude-group a
 2015-08-23-22-30
 ### git commit [ 4727087 ] :  fb-1 unchanged numbers  Sun Aug 23 22:37:19 2015 -0400
 
+php > var_dump( array_map( function($a){ return $a +1;}, range(1,5) )  );
+array(5) {
+    [0] =>
+      int(2)
+        [1] =>
+          int(3)
+            [2] =>
+              int(4)
+                [3] =>
+                  int(5)
+                    [4] =>
+                      int(6)
+}
+
 ##  fizz
+__todo__ return 3 on fizz
++++ b/FizzBuzz/php/Fizzbuzz.php
+-  return $input;
++  return array_map(function($a){ return $a == 3 ?'fizz':$a;}, $input);
++++ b/FizzBuzz/php/FizzbuzzTest.php
++
++  function test_change_three_to_fizz() {
++    $this->assertEquals(['fizz'], fizzbuzz([3]) );
++  }
 
 ##  buzz
 ##  fizzbuzz
