@@ -13,12 +13,13 @@ shelf : /Users/dl/Sites/_perso/dojo.local/FizzBuzz/php/../08/2015-08-23--fb-1
   analyse   | 15     | 30       | 15
   setup     | 15     | 30       | 15
   AT        | 15     | 30          | 30
-  empty     | 15     | 30
-  fizz      | 15     | 30
-  buzz    | 15     | 30
-  fizzbuzz   | 15     | 30
-  liste   | 15     | 30
+  empty     | 15     | 30       |1
+  fizz      | 15     | 30       |5
+  buzz    | 15     | 30         |1
+  fizzbuzz   | 15     | 30      |1
+  liste   | 15     | 30         | 5
   more test   | 15     | 30
+  total     | 2h15     | 4h30    | 1h15
 
 __question__ 1.1 quels sont les requis pour le kata fizzbuzz __réponse__ retourner fizz si multiple de 3 buzz si multiple de 5 fizzbuzz si multiple de 15
   __search_google:__ fizz buzz kata
@@ -132,3 +133,4 @@ __todo__ return fizz on 6
 ##  more test
 
 #### push lines ####
+### git commit [ e864cd0 ] :  fb-1 empty input  Tue Aug 25 18:33:38 2015 -0400
