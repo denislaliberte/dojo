@@ -114,7 +114,19 @@ __todo__ return fizz on 6
 +    $this->assertEquals(['buzz'], fizzbuzz([5]) );
 +  }
 ### git commit [ 89013bf ] :  fb-1 buzz  Tue Aug 25 18:29:40 2015 -0400
+
 ##  fizzbuzz
 ##  more test
 
 #### push lines ####
++++ b/FizzBuzz/08/2015-08-23--fb-1-fizzbuzz-first-iteration.md
++
++++ b/FizzBuzz/php/Fizzbuzz.php
+-      if($a % 3 === 0) return 'fizz';
++      if($a % 15 === 0) return 'fizzbuzz';
++      if($a % 3 === 0) return 'fizz';
++++ b/FizzBuzz/php/FizzbuzzTest.php
++
++  function test_multiple_of_3_and_5_change_to_fizz_buzz() {
++    $this->assertEquals(['fizzbuzz'], fizzbuzz([15]) );
++  }
