@@ -2,6 +2,6 @@
 
 class aTest extends PHPUnit_Framework_TestCase { 
   function test_canary() {
-    $this->assertEquals(1, 1);
+    $this->assertEquals(fizzbuzz(), true);
   }
 }

@@ -17,6 +17,7 @@
 
 ## 1 setup
  2015-08-31--13-58
+### git commit [ 631d206 ] :  fb-2 canary test  Mon Aug 31 13:00:37 2015 -0400
 
 
 
