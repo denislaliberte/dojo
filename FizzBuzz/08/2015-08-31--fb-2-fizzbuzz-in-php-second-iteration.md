@@ -21,6 +21,8 @@
 ### git commit [ 161d036 ] :  fb-2 setup 2 empty function  Mon Aug 31 13:01:43 2015 -0400
 
 
+## 2 return same input
+### git commit [ 2c34783 ] :  fb-2 identity function  Mon Aug 31 13:03:11 2015 -0400
 
 ## X
 __question__ X
