@@ -30,6 +30,10 @@
 2015-08-31--13-07
 ### git commit [ 1c227da ] :  fb-2 fizz 6 case  Mon Aug 31 13:07:52 2015 -0400
 
+
+## 4 buzz
+### git commit [ c336435 ] :  fb-2 buzz  Mon Aug 31 13:08:55 2015 -0400
+
 ## X
 __question__ X
 __todo__ X
