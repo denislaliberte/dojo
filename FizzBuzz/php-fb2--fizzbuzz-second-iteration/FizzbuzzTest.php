@@ -12,5 +12,6 @@ class aTest extends PHPUnit_Framework_TestCase {
 
   function test_buzz() {
     $this->assertEquals(fizzbuzz(5), 'buzz');
+    $this->assertEquals(fizzbuzz(10), 'buzz');
   }
 }
