@@ -1,3 +1,3 @@
 <?php
 
-function fizzbuzz() { return true; }
+function fizzbuzz($input) { return $input; }
