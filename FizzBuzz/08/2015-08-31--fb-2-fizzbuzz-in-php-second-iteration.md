@@ -24,6 +24,11 @@
 ## 2 return same input
 ### git commit [ 2c34783 ] :  fb-2 identity function  Mon Aug 31 13:03:11 2015 -0400
 
+## 3 fizz
+### git commit [ 0f92ddd ] :  fb-2 fizz  Mon Aug 31 13:06:53 2015 -0400
+
+2015-08-31--13-07
+
 ## X
 __question__ X
 __todo__ X
