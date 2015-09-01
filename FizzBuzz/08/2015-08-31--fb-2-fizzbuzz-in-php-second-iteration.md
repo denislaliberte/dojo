@@ -11,8 +11,9 @@
   setup              | 5         | 15         | 5
   fizz               | 5          | 15        | 5      |
   buzz               | 5          | 15        | 5      |
-  test               | 5          | 15        |       |
-  total              | 20         | 1h30      |       |
+  test               | 5          | 15        | 5      |
+  fizzbuzz,list      |            |           | 10
+  total              | 20         | 1h30      | 35      |
 
 
 ## 1 setup
@@ -43,10 +44,10 @@
 ## 6 list
 ### git commit [ a8a673b ] :  fb-2 fizz buzz item  Tue Sep 1 13:01:54 2015 -0400
 
-## X
-__question__ X
-__todo__ X
+### git commit [ 78eb42e ] :  fb-2 final commit  Tue Sep 1 13:09:03 2015 -0400
 
+
+ 2015-09-01--13-09
 
 
 #### push lines ####
