@@ -7,10 +7,10 @@
 
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
-  analyse            | 0         |  15        |       |
-  setup              | 5         | 15
-  fizz               | 5          | 15        |       |
-  buzz               | 5          | 15        |       |
+  analyse            | 0         |  15        | 5      |
+  setup              | 5         | 15         | 5
+  fizz               | 5          | 15        | 5      |
+  buzz               | 5          | 15        | 5      |
   test               | 5          | 15        |       |
   total              | 20         | 1h30      |       |
 
@@ -30,9 +30,11 @@
 2015-08-31--13-07
 ### git commit [ 1c227da ] :  fb-2 fizz 6 case  Mon Aug 31 13:07:52 2015 -0400
 
+ 2015-09-01--12-56
 
 ## 4 buzz
 ### git commit [ c336435 ] :  fb-2 buzz  Mon Aug 31 13:08:55 2015 -0400
+### git commit [ ee0aec8 ] :  fb-2 buzz second case  Mon Aug 31 13:09:52 2015 -0400
 
 ## X
 __question__ X

@@ -2,7 +2,7 @@
 
 class aTest extends PHPUnit_Framework_TestCase { 
   function test_identity() {
-    $this->assertEquals(fizzbuzz(0), 0);
+    $this->assertEquals(fizzbuzz(2), 2);
   }
 
   function test_fizz() {
@@ -13,5 +13,9 @@ class aTest extends PHPUnit_Framework_TestCase {
   function test_buzz() {
     $this->assertEquals(fizzbuzz(5), 'buzz');
     $this->assertEquals(fizzbuzz(10), 'buzz');
+  }
+
+  function test_fizz_buzz() {
+    $this->assertEquals(fizzbuzz(15), 'fizzbuzz');
   }
 }
