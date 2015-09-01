@@ -1,6 +1,6 @@
 <?php
 
-function fizzbuzz($input) {
+function fizzbuzz_item($input) {
   $string = '';
   if($input % 3 == 0 ) $string .= 'fizz';
   if($input % 5 == 0 ) $string .= 'buzz';
