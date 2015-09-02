@@ -7,7 +7,7 @@
 
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
-  setup              | 5         |  10           |       |
+  setup              | 5         |  10        | 15      |
   fizz / buzz        | 5         |  10          |       |
   fizzbuzz / buffest | 5         |   10         |       |
   total              | 15        |   30         |       |
@@ -15,4 +15,8 @@
 
 <!-- ########### push lines ######### -->
 
-  
+## 1 setup  
+### git commit [ 28dd4c1 ] :  php-fb3 canary test  Wed Sep 2 12:23:59 2015 -0400
+
+ 2015-09-02--12-28
+## 3 fizz 1 buzz

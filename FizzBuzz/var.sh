@@ -31,7 +31,6 @@ export n=/Users/TP1/Sites/_perso/dojo.local/FizzBuzz/php-fb2--fizzbuzz-second-it
 export task_url=https://touspourun.atlassian.net/browse/fb-2
 export tu=https://touspourun.atlassian.net/browse/fb-2
 
-alias v="vim -O $note *"
 
 ### php-fb3 fizzbuzz-third-iteration
 export task=php-fb3
@@ -48,3 +47,4 @@ export n=$HOME/Sites/_perso/dojo.local/FizzBuzz/php-fb3--fizzbuzz-third-iteratio
 export task_url=https://touspourun.atlassian.net/browse/php-fb3
 export tu=https://touspourun.atlassian.net/browse/php-fb3
 
+alias v="vim -O $note *"
