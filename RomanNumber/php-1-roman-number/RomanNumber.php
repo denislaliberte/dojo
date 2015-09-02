@@ -1,5 +1,5 @@
 <?php
 
-function romannumber() {
-  return 'I';
+function romannumber($input) {
+  return $input == 1 ? 'I' : 'V';
 }
