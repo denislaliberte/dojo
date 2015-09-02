@@ -8,4 +8,9 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
     $this->assertEquals(romannumber(1666), 'MDCLXVI');
   }
 
+  public function test_one_letter_number() {
+    $this->assertEquals(romannumber(1), 'I');
+
+  }
+
 }
