@@ -1,5 +1,16 @@
 <?php
 
 function romannumber($input) {
-  return $input == 1 ? 'I' : 'V';
+  switch($input) { 
+    case 1:
+      $a = 'I';
+    break;
+    case 5:
+      $a = 'V';
+    break; 
+    case 10:
+      $a = 'X';
+    break; 
+  }
+  return $a;
 }

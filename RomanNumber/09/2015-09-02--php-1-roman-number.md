@@ -43,3 +43,8 @@ Modern Roman numerals are written by expressing each decimal digit of the number
 
   
 ### git commit [ e74477f ] :  php-1 add one  Wed Sep 2 19:04:58 2015 -0400
+### git commit [ 3a09e4b ] :  php-1 add five  Wed Sep 2 19:06:27 2015 -0400
+1 [ PHP 5 switch Statement - W3Schools ](http://www.w3schools.com/php/php_switch.asp)
+2 [ PHP: switch - Manual ](http://php.net/manual/en/control-structures.switch.php)
+3 [ PHPSwitch.com - Using the switch statement in PHP ](http://phpswitch.com/)
+switch | http://bit.ly/1LM3D3Y | switch(1) { case 0: $a = 0; break; case 1: $a = 1; break; } |  assert($a ==1);
