@@ -33,6 +33,7 @@ Modern Roman numerals are written by expressing each decimal digit of the number
   2015-09-02--18-53
 ## 2 setup
 
+### git commit [ 020d99c ] :  php-1 setup  Wed Sep 2 18:56:37 2015 -0400
 
 <!-- ########### push lines ######### -->
 
