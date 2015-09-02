@@ -8,8 +8,8 @@
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
   analyse            | 5         |  15        | 15    | pessimiste
-  setup              | 5         | 10
-  integration test   | 5         | 10 
+  setup              | 5         | 10         | 5     | optimiste
+  integration test   | 5         | 10         | 5     | optimiste
   one / five /ten    | 10        | 30
   three / thirty     | 10        | 30
   four / nine        | 15        | 45
@@ -34,8 +34,11 @@ Modern Roman numerals are written by expressing each decimal digit of the number
 ## 2 setup
 
 ### git commit [ 020d99c ] :  php-1 setup  Wed Sep 2 18:56:37 2015 -0400
+### git commit [ 3cbb038 ] :  php-1 add function  Wed Sep 2 18:59:42 2015 -0400
+### git commit [ e5033b4 ] :  php-1 add integration test  Wed Sep 2 19:02:21 2015 -0400
 
+ 2015-09-02--19-02
+## one / five / ten
 <!-- ########### push lines ######### -->
 
   
-### git commit [ 3cbb038 ] :  php-1 add function  Wed Sep 2 18:59:42 2015 -0400
