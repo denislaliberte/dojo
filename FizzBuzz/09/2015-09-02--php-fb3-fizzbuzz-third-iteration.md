@@ -7,10 +7,10 @@
 
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
-  setup              | 5         |  10        | 15      |
-  fizz / buzz        | 5         |  10          | 10      |
-  fizzbuzz / buffest | 5         |   10         |       |
-  total              | 15        |   30         |       |
+  setup              | 5         |  10        | 15      | bust
+  fizz / buzz        | 5         |  10          | 10      | pessimiste
+  fizzbuzz / buffest | 5         |   10         | 5      | optimiste
+  total              | 15        |   30         | 30      | pessimiste
 
 
 <!-- ########### push lines ######### -->
@@ -27,3 +27,4 @@
 
  2015-09-02--12-36
 ## 3 fizzbuzz 
+### git commit [ e3c0dae ] :  php-fb3 fizzbuzz end  Wed Sep 2 12:38:58 2015 -0400
