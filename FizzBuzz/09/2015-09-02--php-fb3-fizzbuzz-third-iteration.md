@@ -17,6 +17,7 @@
 
 ## 1 setup  
 ### git commit [ 28dd4c1 ] :  php-fb3 canary test  Wed Sep 2 12:23:59 2015 -0400
+### git commit [ 8922c71 ] :  php-fb3 add acceptance test  Wed Sep 2 12:28:54 2015 -0400
 
  2015-09-02--12-28
 ## 3 fizz 1 buzz
