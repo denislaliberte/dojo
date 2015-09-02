@@ -32,3 +32,19 @@ export task_url=https://touspourun.atlassian.net/browse/fb-2
 export tu=https://touspourun.atlassian.net/browse/fb-2
 
 alias v="vim -O $note *"
+
+### php-fb3 fizzbuzz-third-iteration
+export task=php-fb3
+export task_name=php-fb3-fizzbuzz-third-iteration
+export date_start=2015-09-02
+export branche=features/php-fb3-fizzbuzz-third-iteration
+export b=features/php-fb3-fizzbuzz-third-iteration
+export month=09
+export shelf=$HOME/Sites/_perso/dojo.local/FizzBuzz/php-fb3--fizzbuzz-third-iteration/../09
+export task_shelf=$HOME/Sites/_perso/dojo.local/FizzBuzz/php-fb3--fizzbuzz-third-iteration/../09/2015-09-02--php-fb3
+export note=$HOME/Sites/_perso/dojo.local/FizzBuzz/php-fb3--fizzbuzz-third-iteration/../09/2015-09-02--php-fb3-fizzbuzz-third-iteration.md
+export s=$HOME/Sites/_perso/dojo.local/FizzBuzz/php-fb3--fizzbuzz-third-iteration/../09/2015-09-02--php-fb3
+export n=$HOME/Sites/_perso/dojo.local/FizzBuzz/php-fb3--fizzbuzz-third-iteration/../09/2015-09-02--php-fb3-fizzbuzz-third-iteration.md
+export task_url=https://touspourun.atlassian.net/browse/php-fb3
+export tu=https://touspourun.atlassian.net/browse/php-fb3
+
