@@ -1,5 +1,5 @@
 <?php
 
-function fizzbuzz() {
-  return 1;
+function fizzbuzz(array $input) {
+  return $input;
 }
