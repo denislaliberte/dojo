@@ -10,7 +10,7 @@
   analyse            | 5         |  15        | 15    | pessimiste
   setup              | 5         | 10         | 5     | optimiste
   integration test   | 5         | 10         | 5     | optimiste
-  one / five /ten    | 10        | 30
+  one / five /ten    | 10        | 30         | 10    | optimiste
   three / thirty     | 10        | 30
   four / nine        | 15        | 45
   more               | 10        | 30
@@ -39,7 +39,6 @@ Modern Roman numerals are written by expressing each decimal digit of the number
 
  2015-09-02--19-02
 ## one / five / ten
-<!-- ########### push lines ######### -->
 
   
 ### git commit [ e74477f ] :  php-1 add one  Wed Sep 2 19:04:58 2015 -0400
@@ -48,3 +47,9 @@ Modern Roman numerals are written by expressing each decimal digit of the number
 2 [ PHP: switch - Manual ](http://php.net/manual/en/control-structures.switch.php)
 3 [ PHPSwitch.com - Using the switch statement in PHP ](http://phpswitch.com/)
 switch | http://bit.ly/1LM3D3Y | switch(1) { case 0: $a = 0; break; case 1: $a = 1; break; } |  assert($a ==1);
+### git commit [ 68e79c0 ] :  php-1 add ten  Wed Sep 2 19:12:57 2015 -0400
+
+  2015-09-02--19-13
+## three /thiorty
+
+<!-- ########### push lines ######### -->
