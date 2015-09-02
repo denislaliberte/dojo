@@ -9,4 +9,8 @@ class aTest extends PHPUnit_Framework_TestCase {
     $this->assertEquals(fizzbuzz([2]), [2]);
   }
 
+  function test_fizz() {
+    $this->assertEquals(fizzbuzz([3]), ['fizz']);
+  }
+
 }
