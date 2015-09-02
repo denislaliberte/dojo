@@ -14,3 +14,4 @@ export n=/Users/TP1/Sites/_perso/dojo.local/RomanNumber/09/../09/2015-09-02--php
 export task_url=https://touspourun.atlassian.net/browse/php-1
 export tu=https://touspourun.atlassian.net/browse/php-1
 
+alias p='phpunit RomanNumberTest.php'
