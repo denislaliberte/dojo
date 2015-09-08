@@ -50,6 +50,6 @@ switch | http://bit.ly/1LM3D3Y | switch(1) { case 0: $a = 0; break; case 1: $a =
 ### git commit [ 68e79c0 ] :  php-1 add ten  Wed Sep 2 19:12:57 2015 -0400
 
   2015-09-02--19-13
-## three /thiorty
+## three /thirty
 
 <!-- ########### push lines ######### -->

@@ -5,6 +5,9 @@ function romannumber($input) {
     case 1:
       $a = 'I';
     break;
+    case 3:
+      $a = 'III';
+    break;
     case 5:
       $a = 'V';
     break; 
