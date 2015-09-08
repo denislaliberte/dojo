@@ -63,3 +63,4 @@ switch | http://bit.ly/1LM3D3Y | switch(1) { case 0: $a = 0; break; case 1: $a =
 
 
 <!-- ########### push lines ######### -->
+### git commit [ 6a57dc8 ] :  php-1 add bigger case  Tue Sep 8 18:06:17 2015 -0400
