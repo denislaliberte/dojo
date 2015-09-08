@@ -8,6 +8,7 @@
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
   analyse            | 5         |  15        | 15    | pessimiste
+
   setup              | 5         | 10         | 5     | optimiste
   integration test   | 5         | 10         | 5     | optimiste
   one / five /ten    | 10        | 30         | 10    | optimiste
@@ -60,8 +61,10 @@ switch | http://bit.ly/1LM3D3Y | switch(1) { case 0: $a = 0; break; case 1: $a =
 2015-09-08--18-03
 ## more
 
-
-
-<!-- ########### push lines ######### -->
 ### git commit [ 6a57dc8 ] :  php-1 add bigger case  Tue Sep 8 18:06:17 2015 -0400
 ### git commit [ 56568d0 ] :  php-1 refactor  Tue Sep 8 18:09:57 2015 -0400
+
+  four / nine        | 15        | 45         |
+### git commit [ f2036cb ] :  php-1 add 900 and 400 case  Tue Sep 8 18:34:24 2015 -0400
+
+<!-- ########### push lines ######### -->

@@ -4,7 +4,6 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
   public function test_integration() {
     $this->assertEquals(romannumber(8), 'VIII');
     $this->assertEquals(romannumber(1666), 'MDCLXVI');
-    $this->markTestIncomplete('Integration test ');
     $this->assertEquals(romannumber(9), 'IX');
   }
 
