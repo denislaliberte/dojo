@@ -16,6 +16,8 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
 
   public function test_triple() {
     $this->assertEquals(romannumber(3), 'III');
+    $this->assertEquals(romannumber(8), 'VIII');
+    $this->assertEquals(romannumber(30), 'XXX');
   }
 
 }

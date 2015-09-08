@@ -11,8 +11,8 @@
   setup              | 5         | 10         | 5     | optimiste
   integration test   | 5         | 10         | 5     | optimiste
   one / five /ten    | 10        | 30         | 10    | optimiste
-  three / thirty     | 10        | 30
-  four / nine        | 15        | 45
+  three / thirty     | 10        | 30         | 30    | pessimiste
+  four / nine        | 15        | 45         |
   more               | 10        | 30
   total              | 1         | 4
 
@@ -50,7 +50,11 @@ switch | http://bit.ly/1LM3D3Y | switch(1) { case 0: $a = 0; break; case 1: $a =
 ### git commit [ 68e79c0 ] :  php-1 add ten  Wed Sep 2 19:12:57 2015 -0400
 
   2015-09-02--19-13
+ 2015-09-08--12-45
 ## three /thirty
+### git commit [ 4cd2fe7 ] :  php-1 three beefore refactor  Tue Sep 8 12:27:37 2015 -0400
+### git commit [ 842d2a4 ] :  php-1 refactor to add III  Tue Sep 8 13:01:15 2015 -0400
+
+ 2015-09-08--13-07
 
 <!-- ########### push lines ######### -->
-### git commit [ 4cd2fe7 ] :  php-1 three beefore refactor  Tue Sep 8 12:27:37 2015 -0400
