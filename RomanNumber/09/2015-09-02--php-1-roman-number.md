@@ -13,9 +13,9 @@
   integration test   | 5         | 10         | 5     | optimiste
   one / five /ten    | 10        | 30         | 10    | optimiste
   three / thirty     | 10        | 30         | 30    | pessimiste
-  four / nine        | 15        | 45         |
-  more               | 10        | 30
-  total              | 1         | 4
+  four / nine        | 15        | 45         | 45 
+  more               | 10        | 30         | 10
+  total              | 1         | 4          | 1h45
 
 #### 1.1 url
 https://www.youtube.com/watch?v=983zk0eqYLY
@@ -66,5 +66,8 @@ switch | http://bit.ly/1LM3D3Y | switch(1) { case 0: $a = 0; break; case 1: $a =
 
   four / nine        | 15        | 45         |
 ### git commit [ f2036cb ] :  php-1 add 900 and 400 case  Tue Sep 8 18:34:24 2015 -0400
+### git commit [ 21d1c9f ] :  php-1 last case  Tue Sep 8 18:49:36 2015 -0400
+
+ 2015-09-08--18-49
 
 <!-- ########### push lines ######### -->
