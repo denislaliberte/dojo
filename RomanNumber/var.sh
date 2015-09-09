@@ -16,3 +16,19 @@ export tu=https://touspourun.atlassian.net/browse/php-1
 
 alias p='phpunit --bootstrap RomanNumber.php  RomanNumberTest.php'
 alias v="vim -O $n * "
+
+### php-2 roman-number-iterative
+export task=php-2
+export task_name=php-2-roman-number-iterative
+export date_start=2015-09-09
+export branche=features/php-2-roman-number-iterative
+export b=features/php-2-roman-number-iterative
+export month=09
+export shelf=/Users/TP1/Sites/_perso/dojo.local/RomanNumber/php-2-roman-number-iterative/../09
+export task_shelf=/Users/TP1/Sites/_perso/dojo.local/RomanNumber/php-2-roman-number-iterative/../09/2015-09-09--php-2
+export note=/Users/TP1/Sites/_perso/dojo.local/RomanNumber/php-2-roman-number-iterative/../09/2015-09-09--php-2-roman-number-iterative.md
+export s=/Users/TP1/Sites/_perso/dojo.local/RomanNumber/php-2-roman-number-iterative/../09/2015-09-09--php-2
+export n=/Users/TP1/Sites/_perso/dojo.local/RomanNumber/php-2-roman-number-iterative/../09/2015-09-09--php-2-roman-number-iterative.md
+export task_url=https://touspourun.atlassian.net/browse/php-2
+export tu=https://touspourun.atlassian.net/browse/php-2
+
