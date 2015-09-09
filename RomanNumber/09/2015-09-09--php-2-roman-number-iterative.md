@@ -7,8 +7,8 @@
 
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
-  analyse            | 5         | 15         |       |
-  setup              | 5         | 15
+  analyse            | 5         | 15         | 5      |
+  setup              | 5         | 15         | 5
   integration test   | 5         | 15
   simple number      | 5         | 15
   repeate numver     | 5         | 15
@@ -18,8 +18,10 @@
  2015-09-09--12-45
 
 ##  setup              | 5         | 15
+### git commit [ b2dbbe4 ] :  php-2 setup  Wed Sep 9 12:48:23 2015 -0400
 
 ##  integration test   | 5         | 15
+
 ##  simple number      | 5         | 15
 ##  repeate numver     | 5         | 15
 ##  special case       | 15        | 30
