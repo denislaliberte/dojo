@@ -9,7 +9,7 @@
   ------------------:|----------:|-----------:|------:|----------
   analyse            | 5         | 15         | 5      |
   setup              | 5         | 15         | 5
-  integration test   | 5         | 15
+  integration test   | 5         | 15         | 5
   simple number      | 5         | 15
   repeate numver     | 5         | 15
   special case       | 15        | 30
@@ -21,8 +21,12 @@
 ### git commit [ b2dbbe4 ] :  php-2 setup  Wed Sep 9 12:48:23 2015 -0400
 
 ##  integration test   | 5         | 15
+### git commit [ f06233d ] :  php-2 add integration test  Wed Sep 9 12:51:28 2015 -0400
 
 ##  simple number      | 5         | 15
+
+
+
 ##  repeate numver     | 5         | 15
 ##  special case       | 15        | 30
 

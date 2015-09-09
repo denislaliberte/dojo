@@ -5,6 +5,11 @@ class aTest extends PHPUnit_Framework_TestCase {
     $this->markTestIncomplete('integration test');
     $this->assertEquals(
       [romannumber(3),romannumber(9),romannumber(1666)], 
-      ['III','IX','MDCLXI']);
+      ['III','IX','MDCLXI']
+    );
+  }
+
+  function test_simple_number() {
+    $this->assertEquals(romannumber(1),'I');
   }
 }
