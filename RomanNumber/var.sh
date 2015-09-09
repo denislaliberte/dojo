@@ -15,7 +15,6 @@ export task_url=https://touspourun.atlassian.net/browse/php-1
 export tu=https://touspourun.atlassian.net/browse/php-1
 
 alias p='phpunit --bootstrap RomanNumber.php  RomanNumberTest.php'
-alias v="vim -O $n * "
 
 ### php-2 roman-number-iterative
 export task=php-2
@@ -32,3 +31,4 @@ export n=/Users/TP1/Sites/_perso/dojo.local/RomanNumber/php-2-roman-number-itera
 export task_url=https://touspourun.atlassian.net/browse/php-2
 export tu=https://touspourun.atlassian.net/browse/php-2
 
+alias v="vim -O $n * "
