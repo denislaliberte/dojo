@@ -11,5 +11,6 @@ class aTest extends PHPUnit_Framework_TestCase {
 
   function test_simple_number() {
     $this->assertEquals(romannumber(1),'I');
+    $this->assertEquals(romannumber(5),'V');
   }
 }
