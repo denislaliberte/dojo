@@ -11,8 +11,8 @@
   setup              | 5         | 15         | 5
   integration test   | 5         | 15         | 5
   simple number      | 5         | 15         | 15
-  repeate numver     | 5         | 15
-  special case       | 15        | 30
+  repeate numver     | 5         | 15         | 15
+  special case       | 15        | 30         |
   total              | 45        | 2h           |       |
 
  2015-09-09--12-45
@@ -32,6 +32,8 @@
 
 ##  repeate numver     | 5         | 15
  2015-09-09--13-10
+ 2015-09-10--12-15
+### git commit [ 4133b5d ] :  php-2 repeat number  Thu Sep 10 12:27:46 2015 -0400
 ##  special case       | 15        | 30
 
 

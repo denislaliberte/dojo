@@ -2,10 +2,9 @@
 
 class aTest extends PHPUnit_Framework_TestCase {
   function test_identity() {
-    $this->markTestIncomplete('integration test');
     $this->assertEquals(
       [romannumber(3),romannumber(9),romannumber(1666)], 
-      ['III','IX','MDCLXI']
+      ['III','IX','MDCLXVI']
     );
   }
 
@@ -17,5 +16,9 @@ class aTest extends PHPUnit_Framework_TestCase {
   function test_repeat_number() {
     $this->assertEquals(romannumber(3),'III');
     $this->assertEquals(romannumber(8),'VIII');
+  }
+
+  function test_special_number() {
+    $this->assertEquals(romannumber(4),'IV');
   }
 }

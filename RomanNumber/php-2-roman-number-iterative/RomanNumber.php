@@ -2,8 +2,19 @@
 
 function romannumber($input) {
   $values = [
+    new number(1000, 'M'),
+    new number(900, 'CM'),
+    new number(500, 'D'),
+    new number(400, 'CD'),
+    new number(100,'C'),
+    new number(90,'XC'),
+    new number(50, 'L'),
+    new number(40, 'XL'),
+    new number(10, 'X'),
+    new number(9, 'IX'),
     new number(5,'V'),
-    new number(1,'I')
+    new number(4,'IV'),
+    new number(1,'I'),
     ];
   $candidate = new number($input,'');
   foreach($values as $value)  {
