@@ -10,7 +10,7 @@
   analyse            | 5         | 15         | 5      |
   setup              | 5         | 15         | 5
   integration test   | 5         | 15         | 5
-  simple number      | 5         | 15
+  simple number      | 5         | 15         | 15
   repeate numver     | 5         | 15
   special case       | 15        | 30
   total              | 45        | 2h           |       |
@@ -27,9 +27,11 @@
 
 ### git commit [ c08babb ] :  php-2 one  Wed Sep 9 12:54:48 2015 -0400
 ### git commit [ efe08e1 ] :  php-2 five  Wed Sep 9 12:56:11 2015 -0400
+### git commit [ 79c7189 ] :  php-2 refactor to remove duplication  Wed Sep 9 13:02:41 2015 -0400
 
 
 ##  repeate numver     | 5         | 15
+ 2015-09-09--13-10
 ##  special case       | 15        | 30
 
 

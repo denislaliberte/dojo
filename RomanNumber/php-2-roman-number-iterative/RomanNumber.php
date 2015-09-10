@@ -2,31 +2,34 @@
 
 function romannumber($input) {
   $values = [
-    new number(1,'I'),
-    new number(5,'V')
+    new number(5,'V'),
+    new number(1,'I')
     ];
+  $candidate = new number($input,'');
   foreach($values as $value)  {
-    if($value->test($input)) {
-      return $value->roman();
-    }
+    $candidate->match($value);
   }
+  return $candidate->roman;
 }
 
 class number {
   private $number;
-  private $roman;
+  public $roman;
 
   public function __construct($number,$roman) {
     $this->number = $number;
     $this->roman = $roman;
   }
 
-  public function test($input) {
-    return $input == $this->number;
+  private function greater($input) {
+    return $this->number >= $input->number;
   }
-
-  public function roman() {
-    return $this->roman;
+  
+  public  function match($input) {
+   while($this->greater($input)) {
+     $this->roman .= $input->roman;
+     $this->number -= $input->number;
+   }
   }
 }
 

@@ -13,4 +13,9 @@ class aTest extends PHPUnit_Framework_TestCase {
     $this->assertEquals(romannumber(1),'I');
     $this->assertEquals(romannumber(5),'V');
   }
+
+  function test_repeat_number() {
+    $this->assertEquals(romannumber(3),'III');
+    $this->assertEquals(romannumber(8),'VIII');
+  }
 }
