@@ -16,7 +16,7 @@ function romannumber($input) {
     new number(4,'IV'),
     new number(1,'I'),
     ];
-  $candidate = new number($input,'');
+  $candidate = new number($input);
   foreach($values as $value)  {
     $candidate->match($value);
   }
@@ -27,7 +27,7 @@ class number {
   private $number;
   public $roman;
 
-  public function __construct($number,$roman) {
+  public function __construct($number,$roman = '') {
     $this->number = $number;
     $this->roman = $roman;
   }
