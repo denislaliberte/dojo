@@ -23,7 +23,8 @@
 ##  analyse            | 15        |30          |       |
 2015-09-10--12-48
 
-##  setup              | 5        | 15
+##  setup              | 5        | 15 | 10
+### git commit [ 2a4f53a ] :  php-3 setup  Sat Sep 12 21:16:50 2015 -0400
 
 ##  integration test   | 15        | 30
 ##  encode simple case | 5         | 15
