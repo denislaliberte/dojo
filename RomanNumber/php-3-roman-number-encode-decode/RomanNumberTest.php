@@ -18,4 +18,8 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
      $this->assertEquals(1, romannumber('I'));
      $this->assertEquals(10, romannumber('X'));
   }
+
+  public function test_two_numbers() {
+     $this->assertEquals(11, romannumber('XI'));
+  }
 }

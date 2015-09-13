@@ -45,3 +45,4 @@
 
   
 ### git commit [ 80fe63d ] :  php-3 decode simple case  Sat Sep 12 22:15:46 2015 -0400
+### git commit [ ed31215 ] :  php-3 second simple case  Sat Sep 12 22:19:10 2015 -0400
