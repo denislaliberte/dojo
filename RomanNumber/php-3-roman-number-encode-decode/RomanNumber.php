@@ -10,8 +10,7 @@ function romannumber($input, $precendent = 0) {
     'X' =>10,
     'C' =>100,
   );
-  $n = $numbers[$current_symbol];
-  if($precendent > $n) $n = $n * -1;
-
-  return $n + romannumber($rest_symbol, $n);
+  $current = $numbers[$current_symbol];
+  if($precendent > $current) $current = $current * -1;
+  return $current + romannumber($rest_symbol, $current);
 }
