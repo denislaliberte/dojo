@@ -25,5 +25,10 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
      $this->assertEquals(3, romannumber('III'));
   }
 
+  public function test_decode_special_case() {
+    $this->markTestIncomplete("todo");
+     $this->assertEquals(9, romannumber('IX'));
+  }
+
 
 }

@@ -1,4 +1,4 @@
-#php-3 romannumber-encode-decode 2015-09-10
+f#php-3 romannumber-encode-decode 2015-09-10
 
 
 ## 1 analyse
@@ -37,7 +37,9 @@
 ### git commit [ 65b3671 ] :  php-3 simple case two digit  Sat Sep 12 22:43:41 2015 -0400
 ### git commit [ 0b5ee08 ] :  php-3 second two number case  Sat Sep 12 22:46:00 2015 -0400
 
-##  decode repeate case | 15       | 30
+##  decode repeate case | 15       | 30 | 5
+### git commit [ d5b3a4e ] :  php-3 aee p.l.ay bgmx.p  Sat Sep 12 22:49:49 2015 -0400
+
 ##  decode special case | 15       | 30
 ##  encode simple case | 5         | 15
 ##  encode repeate case | 15       | 30
