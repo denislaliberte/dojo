@@ -1,5 +1,9 @@
 <?php
 
 function romannumber($input) {
-  return 1;
+  $numbers = array(
+    'I' =>1,
+    'X' =>10,
+  );
+  return $numbers[$input];
 }
