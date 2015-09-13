@@ -39,3 +39,4 @@
 <!-- ########### push lines ######### -->
 
   
+### git commit [ 6bc58ea ] :  php-3 refactor encore integration test  Sat Sep 12 21:30:42 2015 -0400
