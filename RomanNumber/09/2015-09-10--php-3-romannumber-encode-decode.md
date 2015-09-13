@@ -41,6 +41,9 @@ f#php-3 romannumber-encode-decode 2015-09-10
 ### git commit [ d5b3a4e ] :  php-3 aee p.l.ay bgmx.p  Sat Sep 12 22:49:49 2015 -0400
 
 ##  decode special case | 15       | 30
+
+### git commit [ 1b8afde ] :  php-3 add special case  Sun Sep 13 18:59:15 2015 -0400
+
 ##  encode simple case | 5         | 15
 ##  encode repeate case | 15       | 30
 ##  encode sepcial case | 15       | 30
