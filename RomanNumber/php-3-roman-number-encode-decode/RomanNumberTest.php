@@ -22,5 +22,8 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
   public function test_two_numbers() {
      $this->assertEquals(11, romannumber('XI'));
      $this->assertEquals(105, romannumber('CV'));
+     $this->assertEquals(3, romannumber('III'));
   }
+
+
 }

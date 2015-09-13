@@ -30,8 +30,12 @@
 ### git commit [ 6bc58ea ] :  php-3 refactor encore integration test  Sat Sep 12 21:30:42 2015 -0400
 ### git commit [ 8b2d7e8 ] :  php-3 decode integration test  Sat Sep 12 21:34:10 2015 -0400
 
-##  decode simple case  | 30       | 45
+##  decode simple case  | 30       | 45 | 30
  22h11 
+### git commit [ 80fe63d ] :  php-3 decode simple case  Sat Sep 12 22:15:46 2015 -0400
+### git commit [ ed31215 ] :  php-3 second simple case  Sat Sep 12 22:19:10 2015 -0400
+### git commit [ 65b3671 ] :  php-3 simple case two digit  Sat Sep 12 22:43:41 2015 -0400
+### git commit [ 0b5ee08 ] :  php-3 second two number case  Sat Sep 12 22:46:00 2015 -0400
 
 ##  decode repeate case | 15       | 30
 ##  decode special case | 15       | 30
@@ -44,6 +48,3 @@
 <!-- ########### push lines ######### -->
 
   
-### git commit [ 80fe63d ] :  php-3 decode simple case  Sat Sep 12 22:15:46 2015 -0400
-### git commit [ ed31215 ] :  php-3 second simple case  Sat Sep 12 22:19:10 2015 -0400
-### git commit [ 65b3671 ] :  php-3 simple case two digit  Sat Sep 12 22:43:41 2015 -0400
