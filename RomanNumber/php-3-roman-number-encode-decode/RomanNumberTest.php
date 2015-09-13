@@ -14,12 +14,12 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
      $this->assertEquals($expected, $result );
   }
 
-  public function test_encode_simple_case() {
+  public function test_decode_simple_case() {
      $this->assertEquals(1, romannumber('I'));
      $this->assertEquals(10, romannumber('X'));
   }
 
-  public function test_two_numbers() {
+  public function test_decode_two_numbers() {
      $this->assertEquals(11, romannumber('XI'));
      $this->assertEquals(105, romannumber('CV'));
      $this->assertEquals(3, romannumber('III'));
@@ -27,6 +27,11 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
 
   public function test_decode_special_case() {
      $this->assertEquals(9, romannumber('IX'));
+  }
+
+  public function test_encode_simple_case() {
+     $this->assertEquals("I", romannumber_e(1));
+     $this->assertEquals("X", romannumber_e(10));
   }
 
 
