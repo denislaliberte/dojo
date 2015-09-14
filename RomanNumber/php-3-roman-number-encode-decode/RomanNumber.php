@@ -8,24 +8,30 @@ function romannumber($input) {
     'I' =>1,
   );
   if(is_string($input)) {
-    return romannumber_d($input, $numbers);
+    $process = romannumber_d($numbers);
   } else {
-    return romannumber_e($input, $numbers);
+    $process = romannumber_e($input, $numbers);
   }
+  return $process($input);
 }
 
 
-function romannumber_d($input, $numbers, $precendent = 0) {
-  if(empty($input)) return 0;
-  $current_symbol = substr($input,-1);
-  $rest_symbol =  substr($input,0,-1);
-  $current = $numbers[$current_symbol];
-  if($precendent > $current) $current = $current * -1;
-  return $current + romannumber_d($rest_symbol, $numbers, $current);
+function romannumber_d($numbers) {
+  $decode = function($input, $precendent = 0) use($numbers, &$decode) {
+    if(empty($input)) return 0;
+    $current_symbol = substr($input,-1);
+    $rest_symbol =  substr($input,0,-1);
+    $current = $numbers[$current_symbol];
+    if($precendent > $current) $current = $current * -1;
+    return $current + $decode($rest_symbol, $current);
+  };
+  return $decode;
 }
 
 function romannumber_e($input, $numbers) {
-  foreach($numbers as $k => $v) {
-    if($input == $v) return $k;
-  }
+  return function($input) use ($numbers) {
+    foreach($numbers as $k => $v) {
+      if($input == $v) return $k;
+    }
+  };
 }
