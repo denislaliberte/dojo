@@ -9,7 +9,7 @@
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
   analyse            | 15        |30          | 15      |
-  setup              | 5        | 15
+  setup              | 5        | 15          |5
   integration test   | 15        | 30
   encode simple case | 5         | 15
   encode repeate case | 15       | 30
@@ -23,7 +23,8 @@
 ##  analyse            | 15        |30          |       |
 2015-09-10--12-48
 
-##  setup              | 5        | 15
+##  setup              | 5        | 15 | 5
+### git commit [ 9e92f65 ] :  php-3 setup  Thu Sep 10 12:56:19 2015 -0400
 
 ##  integration test   | 15        | 30
 ##  encode simple case | 5         | 15
