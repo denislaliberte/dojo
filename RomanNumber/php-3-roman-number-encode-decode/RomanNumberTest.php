@@ -30,7 +30,7 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
   }
 
   public function test_encode_simple_case() {
-     $this->assertEquals("I", romannumber_e(1));
-     $this->assertEquals("X", romannumber_e(10));
+     $this->assertEquals("I", romannumber(1));
+     $this->assertEquals("X", romannumber(10));
   }
 }
