@@ -56,3 +56,4 @@
   
 ### git commit [ c48e6af ] :  php-3 merge... and refactor oups...  Mon Sep 14 18:42:01 2015 -0400
 ### git commit [ b7bd5cf ] :  php-3 refactor to use only one dictionnary for the two function  Mon Sep 14 18:45:00 2015 -0400
+### git commit [ 0623522 ] :  php-3 refactor to use closure  Mon Sep 14 18:51:25 2015 -0400

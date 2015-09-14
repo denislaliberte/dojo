@@ -19,13 +19,19 @@ function romannumber($input) {
 function romannumber_d($numbers) {
   $decode = function($input, $precendent = 0) use($numbers, &$decode) {
     if(empty($input)) return 0;
-    $current_symbol = substr($input,-1);
-    $rest_symbol =  substr($input,0,-1);
-    $current = $numbers[$current_symbol];
+    $current = $numbers[ last($input) ];
     if($precendent > $current) $current = $current * -1;
-    return $current + $decode($rest_symbol, $current);
+    return $current + $decode( init($input), $current);
   };
   return $decode;
+}
+
+function last($string) {
+  return substr($string,-1);
+}
+
+function init($string) {
+  return substr($string,0,-1);
 }
 
 function romannumber_e($input, $numbers) {
