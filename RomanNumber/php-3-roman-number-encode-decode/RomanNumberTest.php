@@ -35,5 +35,8 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
 
   public function test_encode_repeat_case() {
      $this->assertEquals("MMM", romannumber(3000));
+     $this->assertEquals("MD", romannumber(1500));
+     $this->assertEquals("CCCL", romannumber(350));
+
   }
 }
