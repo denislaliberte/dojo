@@ -2,10 +2,11 @@
 
 function romannumber($input) {
   $numbers = array(
-    'C' =>100,
-    'X' =>10,
-    'V' =>5,
-    'I' =>1,
+    'M' => 1000,
+    'C' => 100,
+    'X' => 10,
+    'V' => 5,
+    'I' => 1,
   );
   if(is_string($input)) {
     $process = romannumber_d($numbers);
@@ -35,9 +36,11 @@ function init($string) {
 }
 
 function romannumber_e($numbers) {
-  return function($input) use ($numbers) {
+  $decode = function($input) use ($numbers, &$decode) {
     foreach($numbers as $k => $v) {
       if($input == $v) return $k;
+      if($input > $v ) return $k . $decode($input - $v);
     }
   };
+  return $decode;
 }

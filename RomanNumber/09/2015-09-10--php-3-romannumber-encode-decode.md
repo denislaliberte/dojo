@@ -51,8 +51,12 @@
 ### git commit [ 0623522 ] :  php-3 refactor to use closure  Mon Sep 14 18:51:25 2015 -0400
 ### git commit [ 57bd1e5 ] :  php-3 refactor  Mon Sep 14 19:22:48 2015 -0400
 
+### git commit [ 3cfcf2f ] :  php-3 cleanup  Tue Sep 15 17:42:34 2015 -0400
+### git commit [ 69181d2 ] :  php-3 encode complete  Tue Sep 15 17:44:07 2015 -0400
 
 ##  encode simple case | 5         | 15
+already done
+
 ##  encode repeate case | 15       | 30
 ##  encode sepcial case | 15       | 30
 
@@ -61,4 +65,3 @@
 <!-- ########### push lines ######### -->
 
   
-### git commit [ 3cfcf2f ] :  php-3 cleanup  Tue Sep 15 17:42:34 2015 -0400
