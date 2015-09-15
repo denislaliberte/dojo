@@ -45,6 +45,13 @@
 ### git commit [ 1b8afde ] :  php-3 add special case  Sun Sep 13 18:59:15 2015 -0400
 ### git commit [ 2831754 ] :  php-3 second simple case  Sun Sep 13 19:17:05 2015 -0400
 
+## refactor |0 | 0|45
+### git commit [ c48e6af ] :  php-3 merge... and refactor oups...  Mon Sep 14 18:42:01 2015 -0400
+### git commit [ b7bd5cf ] :  php-3 refactor to use only one dictionnary for the two function  Mon Sep 14 18:45:00 2015 -0400
+### git commit [ 0623522 ] :  php-3 refactor to use closure  Mon Sep 14 18:51:25 2015 -0400
+### git commit [ 57bd1e5 ] :  php-3 refactor  Mon Sep 14 19:22:48 2015 -0400
+
+
 ##  encode simple case | 5         | 15
 ##  encode repeate case | 15       | 30
 ##  encode sepcial case | 15       | 30
@@ -54,7 +61,3 @@
 <!-- ########### push lines ######### -->
 
   
-### git commit [ c48e6af ] :  php-3 merge... and refactor oups...  Mon Sep 14 18:42:01 2015 -0400
-### git commit [ b7bd5cf ] :  php-3 refactor to use only one dictionnary for the two function  Mon Sep 14 18:45:00 2015 -0400
-### git commit [ 0623522 ] :  php-3 refactor to use closure  Mon Sep 14 18:51:25 2015 -0400
-### git commit [ 57bd1e5 ] :  php-3 refactor  Mon Sep 14 19:22:48 2015 -0400

@@ -10,7 +10,7 @@ function romannumber($input) {
   if(is_string($input)) {
     $process = romannumber_d($numbers);
   } else {
-    $process = romannumber_e($input, $numbers);
+    $process = romannumber_e($numbers);
   }
   return $process($input);
 }
@@ -34,7 +34,7 @@ function init($string) {
   return substr($string,0,-1);
 }
 
-function romannumber_e($input, $numbers) {
+function romannumber_e($numbers) {
   return function($input) use ($numbers) {
     foreach($numbers as $k => $v) {
       if($input == $v) return $k;
