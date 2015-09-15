@@ -8,7 +8,6 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
      $this->assertEquals($expected, $result );
   }
   public function test_integration_decode(){
-    $this->markTestIncomplete("todo");
     $expected = [5,9,130];
     $result = array_map('romannumber',["V", "IX", "CXXX"]);
      $this->assertEquals($expected, $result );
