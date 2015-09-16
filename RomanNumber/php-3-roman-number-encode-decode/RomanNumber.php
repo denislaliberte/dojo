@@ -17,15 +17,15 @@ function romannumber($input) {
     'I' => 1,
   );
   if(is_string($input)) {
-    $process = romannumber_d($numbers);
+    $process = romannumber_decode($numbers);
   } else {
-    $process = romannumber_e($numbers);
+    $process = romannumber_encode($numbers);
   }
   return $process($input);
 }
 
 
-function romannumber_d($numbers) {
+function romannumber_decode($numbers) {
   $decode = function($input, $precendent = 0) use($numbers, &$decode) {
     if(empty($input)) return 0;
     $current = $numbers[ last($input) ];
@@ -43,14 +43,14 @@ function init($string) {
   return substr($string,0,-1);
 }
 
-function romannumber_e(array $numbers) {
+function romannumber_encode(array $numbers) {
   assert(!empty($numbers));
   return function($input) use ($numbers) {
       if($input == 0 ) return "";
       if($input ==  head($numbers)) return  head_key($numbers);
-      $decode = romannumber_e($numbers);
+      $decode = romannumber_encode($numbers);
       if($input > head($numbers) )return head_key($numbers) . $decode($input -  head($numbers));
-      $decode = romannumber_e(rest($numbers));
+      $decode = romannumber_encode(rest($numbers));
       return $decode($input);
   };
 }
