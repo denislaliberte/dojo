@@ -9,15 +9,16 @@
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
   analyse            | 15        |30          | 15      |
-  setup              | 5        | 15          |5
-  integration test   | 15        | 30
+  setup              | 5        | 15 | 10
+  integration test   | 15        | 30 | 30
+  decode simple case  | 30       | 45 | 30
+  decode repeate case | 15       | 30 | 5
+  decode special case | 15       | 30 | 30
+ refactor |0 | 0|45
   encode simple case | 5         | 15
-  encode repeate case | 15       | 30
-  encode sepcial case | 15       | 30
-  decode simple case  | 30       | 45
-  decode repeate case | 15       | 30
-  decode special case | 15       | 30
-  total              |  2h14     | 4h15           |       |
+  encode repeate case | 15       | 30 | 1h| 
+  encode sepcial case | 15       | 30 | 15
+  total              |  2h14     | 4h15           | 3h15      | pessimiste
 
 
 ##  analyse            | 15        |30          |       |
@@ -61,16 +62,17 @@ already done
 ### git commit [ 7443086 ] :  php-3 add repeat case  Tue Sep 15 17:49:37 2015 -0400
 ### git commit [ 0c2af99 ] :  php-3 add repeat number to decode  Wed Sep 16 09:31:42 2015 -0400
 
-##  encode sepcial case | 15       | 30
+##  encode sepcial case | 15       | 30 | 15
 
-
-
-<!-- ########### push lines ######### -->
-
-  
 ### git commit [ a74b598 ] :  php-3 last case  Wed Sep 16 18:17:40 2015 -0400
 ### git commit [ 87d6c63 ] :  php-3 cleanup  Wed Sep 16 18:18:56 2015 -0400
 ### git commit [ 39435ff ] :  php-3 refactor  Wed Sep 16 18:21:28 2015 -0400
 ### git commit [ 84925f5 ] :  php-3 refactor  Wed Sep 16 18:25:07 2015 -0400
 ### git commit [ bce9025 ] :  php-3 refactor  Wed Sep 16 18:27:13 2015 -0400
 ### git commit [ eff837b ] :  php-3 refactor  Wed Sep 16 18:27:17 2015 -0400
+
+
+<!-- ########### push lines ######### -->
+
+  
+## 1 analyse
