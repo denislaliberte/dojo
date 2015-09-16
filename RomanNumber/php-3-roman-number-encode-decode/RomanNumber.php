@@ -27,6 +27,7 @@ function romannumber($input) {
 
 function romannumber_decode($numbers) {
   $decode = function($input, $precendent = 0) use($numbers, &$decode) {
+    assert(!empty($input));
     if(empty($input)) return 0;
     $current = $numbers[ last($input) ];
     if($precendent > $current) $current = $current * -1;
