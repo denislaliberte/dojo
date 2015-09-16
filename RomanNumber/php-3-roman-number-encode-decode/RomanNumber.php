@@ -37,12 +37,27 @@ function init($string) {
   return substr($string,0,-1);
 }
 
-function romannumber_e($numbers) {
-  $decode = function($input) use ($numbers, &$decode) {
-    foreach($numbers as $k => $v) {
-      if($input == $v) return $k;
-      if($input > $v ) return $k . $decode($input - $v);
-    }
+function romannumber_e(array $numbers) {
+  assert(!empty($numbers));
+  return function($input) use ($numbers) {
+      if($input == 0 ) return "";
+      if($input ==  head($numbers)) return  head_key($numbers);
+      $decode = romannumber_e($numbers);
+      if($input > head($numbers) )return head_key($numbers) . $decode($input -  head($numbers));
+      $decode = romannumber_e(rest($numbers));
+      return $decode($input);
   };
-  return $decode;
+}
+
+function head(array $input) {
+  return array_shift($input);
+}
+
+function head_key(array $input) {
+  return current(array_keys($input));
+}
+
+function rest(array $input) {
+  array_shift($input);
+  return $input;
 }
