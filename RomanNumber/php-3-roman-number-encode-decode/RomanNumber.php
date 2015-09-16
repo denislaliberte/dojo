@@ -46,10 +46,12 @@ function init($string) {
 function romannumber_encode(array $numbers) {
   assert(!empty($numbers));
   return function($input) use ($numbers) {
-      if($input == 0 ) return "";
+      assert($input != 0);
       if($input ==  head($numbers)) return  head_key($numbers);
-      $decode = romannumber_encode($numbers);
-      if($input > head($numbers) )return head_key($numbers) . $decode($input -  head($numbers));
+      if($input > head($numbers) ) {
+        $decode = romannumber_encode($numbers);
+        return head_key($numbers) . $decode($input -  head($numbers));
+      }
       $decode = romannumber_encode(rest($numbers));
       return $decode($input);
   };
