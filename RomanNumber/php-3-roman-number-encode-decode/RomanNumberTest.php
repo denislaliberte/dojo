@@ -2,7 +2,6 @@
 
 class RomanNumberTest extends PHPUnit_Framework_TestCase {
   public function test_integration_encode(){
-    $this->markTestIncomplete("todo");
     $expected = ["V", "IX", "CXXX"];
     $result = array_map('romannumber',[5,9,130]);
      $this->assertEquals($expected, $result );
@@ -37,6 +36,10 @@ class RomanNumberTest extends PHPUnit_Framework_TestCase {
      $this->assertEquals("MMM", romannumber(3000));
      $this->assertEquals("MD", romannumber(1500));
      $this->assertEquals("CCCL", romannumber(350));
+  }
 
+  public function test_special_case() {
+       $this->assertEquals("IX", romannumber(9));
+       $this->assertEquals("XL", romannumber(40));
   }
 }

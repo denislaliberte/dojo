@@ -57,8 +57,10 @@
 ##  encode simple case | 5         | 15
 already done
 
-##  encode repeate case | 15       | 30 | 5
+##  encode repeate case | 15       | 30 | 1h| 
 ### git commit [ 7443086 ] :  php-3 add repeat case  Tue Sep 15 17:49:37 2015 -0400
+### git commit [ 0c2af99 ] :  php-3 add repeat number to decode  Wed Sep 16 09:31:42 2015 -0400
+
 ##  encode sepcial case | 15       | 30
 
 
