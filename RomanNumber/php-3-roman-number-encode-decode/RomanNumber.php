@@ -47,13 +47,16 @@ function romannumber_encode(array $numbers) {
   assert(!empty($numbers));
   return function($input) use ($numbers) {
       assert($input != 0);
-      if($input ==  head($numbers)) return  head_key($numbers);
-      if($input > head($numbers) ) {
+      if($input ==  head($numbers)) {
+        $return =  head_key($numbers);
+      }elseif($input > head($numbers) ) {
         $decode = romannumber_encode($numbers);
-        return head_key($numbers) . $decode($input -  head($numbers));
+        $return = head_key($numbers) . $decode($input -  head($numbers));
+      } else {
+        $decode = romannumber_encode(rest($numbers));
+        $return = $decode($input);
       }
-      $decode = romannumber_encode(rest($numbers));
-      return $decode($input);
+      return $return;
   };
 }
 
