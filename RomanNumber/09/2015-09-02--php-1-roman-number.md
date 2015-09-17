@@ -8,14 +8,13 @@
   tache              | optimiste | pessimiste | rééel | différence
   ------------------:|----------:|-----------:|------:|----------
   analyse            | 5         |  15        | 15    | pessimiste
-
   setup              | 5         | 10         | 5     | optimiste
   integration test   | 5         | 10         | 5     | optimiste
   one / five /ten    | 10        | 30         | 10    | optimiste
   three / thirty     | 10        | 30         | 30    | pessimiste
-  four / nine        | 15        | 45         | 45 
-  more               | 10        | 30         | 10
-  total              | 1         | 4          | 1h45
+  four / nine        | 15        | 45         | 45    | pessimiste
+  more               | 10        | 30         | 10    | optimiste
+  total              | 1         | 4          | 1h45   |optimiste
 
 #### 1.1 url
 https://www.youtube.com/watch?v=983zk0eqYLY
